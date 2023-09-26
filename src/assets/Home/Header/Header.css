@@ -1,0 +1,96 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    border-bottom: 1px solid;
+    border-color: black;
+    overflow: hidden;
+}
+.header-motion{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.header-nombre{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight:500;
+    padding-bottom: 0.7rem;
+}
+.header-menu {
+    display: flex;
+    /* width: 35.99%; */
+    /* justify-content: space-between; */
+}
+.header-menu-about{
+    padding-left: .5rem;
+}
+.header-menu > h4{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.header-boton {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: none;
+    opacity: 0;
+    padding-right: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .header-boton {
+        display: block;
+        padding-bottom: .6rem;
+        opacity: 0.9;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding-right: 0rem;
+    }
+    .header-menu{
+        height: 100%;
+        padding-right: 3rem;
+        flex-direction: column;
+        /* padding-top: 3.4rem; */
+        /* align-items: center; */
+        justify-content: center;
+    }
+    .header-menu h4{
+        margin: 0rem;
+        font-size: 3rem;
+        border-bottom: 1px solid;
+    }
+    .header-menu-proyectos{
+        border-top: 1px solid;
+        padding-bottom: .5rem;
+    }
+    .header-menu-eliminarcoma{
+        display: none;
+    }
+    .header-menu-about{
+        padding-left: 0rem;
+    }
+    .header nav {
+        position: fixed;
+        top: 0;
+        background-color: white;
+        text-transform: capitalize;
+        height: 100vh;
+        width: 100%;
+        /* flex-direction: column; */
+        /* transition: 1s; */
+        transform: translateY(150vh);
+        overflow-x: hidden;
+        z-index: 99;
+    }
+    .header .responsive-header {
+        transform: none;
+    }
+    .header-cerrar-boton {
+        position: absolute;
+        top: 1rem;
+        right: 3rem;
+    }
+}

@@ -1,0 +1,31 @@
+.primer-proyecto{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-end;
+    gap: 2rem;
+}
+.primer-proyecto-container{
+    width: 50%;
+    
+}
+
+.primer-proyecto-container-imagen{
+    width: 100%;
+}
+.primer-proyecto-container-titulo {
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.primer-proyecto-container-subtitulo{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+@media only screen and (max-width: 800px) {
+    .primer-proyecto-container {
+        width: 100%;
+    }
+}
