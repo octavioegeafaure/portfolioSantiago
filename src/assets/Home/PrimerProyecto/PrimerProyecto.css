@@ -25,6 +25,9 @@
     font-weight: 400;
 }
 @media only screen and (max-width: 800px) {
+    .primer-proyecto {
+        flex-direction: column;
+    }
     .primer-proyecto-container {
         width: 100%;
     }
