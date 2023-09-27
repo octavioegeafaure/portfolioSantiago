@@ -1,5 +1,6 @@
 import "./PrimerProyecto.css"
-import banner from "../../../../public/Images/banner.png"
+import banner from "../../../../public/Images/tallermura.png"
+import taller from "../../../../public/Images/tallertissot.png"
 import { motion } from "framer-motion"
 
 const PrimerProyecto = () => {
@@ -15,8 +16,8 @@ const PrimerProyecto = () => {
         className="primer-proyecto">
         <div className="primer-proyecto-container">
             <img
-            src={banner}
-            className="primer-proyecto-container-imagen"
+            src={taller}
+            className="primer-proyecto-container-imagen tallerTissot"
             />
             <div >
                 <p className="primer-proyecto-container-titulo">Taller Tissot</p>
@@ -26,7 +27,7 @@ const PrimerProyecto = () => {
         <div className="primer-proyecto-container">
             <img
             src={banner}
-            className="primer-proyecto-container-imagen"
+            className="primer-proyecto-container-imagen tallerMura"
             />
             <div >
                 <p className="primer-proyecto-container-titulo">Taller Mura</p>

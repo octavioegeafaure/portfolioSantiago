@@ -1,16 +1,25 @@
 .primer-proyecto{
     display: flex;
-    /* flex-direction: column; */
-    align-items: flex-end;
-    gap: 2rem;
+    height: 100vh;
+    padding-top: 5rem;
+    /* justify-content: space-around; */
 }
 .primer-proyecto-container{
-    width: 50%;
-    
+   
 }
 
+
 .primer-proyecto-container-imagen{
-    width: 100%;
+    width: 90%;
+    /* height:   50%; */
+    object-fit: cover;
+    object-position: center center;
+}
+.bannerImg{
+    /* width: 55%; */
+}
+.tallerMura{
+    width:  102%;
 }
 .primer-proyecto-container-titulo {
     margin: 0;
@@ -23,10 +32,17 @@
     margin: 0;
     font-size: 1rem;
     font-weight: 400;
+    padding-bottom: 4rem;
+}
+@media only screen and (max-width: 1080px) {
+    
 }
 @media only screen and (max-width: 800px) {
     .primer-proyecto {
         flex-direction: column;
+    }
+    .primer-proyecto-container-imagen{
+        width: 100%;
     }
     .primer-proyecto-container {
         width: 100%;
