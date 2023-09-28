@@ -28,7 +28,7 @@ export const Header = () => {
         <nav ref={navRef}>
           <div className="header-menu">
               <motion.h4 className="header-menu-proyectos"       
-              >proyectos
+              >projects
               </motion.h4>
               <h4 className="header-menu-eliminarcoma">,</h4>
               <motion.h4
