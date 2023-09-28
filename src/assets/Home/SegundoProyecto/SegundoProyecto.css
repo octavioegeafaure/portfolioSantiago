@@ -1,0 +1,21 @@
+.segundo-proyecto{
+    display: grid;
+    grid-template-columns: 55% 25% ;
+    gap : 0rem;
+    justify-content: space-between;
+    align-items: baseline;   
+}
+@media only screen and (max-width: 800px) {
+    .segundo-proyecto {
+        display: block;
+    }
+
+    .primer-proyecto-container-imagen {
+        width: 100%;
+    }
+
+    .primer-proyecto-container {
+        width: 100%;
+    }
+}
+ 

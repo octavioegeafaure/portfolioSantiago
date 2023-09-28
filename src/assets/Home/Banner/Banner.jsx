@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 const titulo = [
   "Portfolio Web",
-  "Arquitectónico",
+  "Arquitectónico.",
 ]
 
 export const Banner = () => {

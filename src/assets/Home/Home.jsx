@@ -1,7 +1,7 @@
 import { Banner } from "./Banner/Banner"
 import { Header } from "./Header/Header"
 import PrimerProyecto from "./PrimerProyecto/PrimerProyecto"
-import PruebaHover from "./PruebaHover/PruebaHover"
+import SegundoProyecto from "./SegundoProyecto/SegundoProyecto"
 
 export const Home = () => {
   return (
@@ -9,6 +9,7 @@ export const Home = () => {
         <Header />
         <Banner />
         <PrimerProyecto />
+        <SegundoProyecto />
     </div>
   )
 }
