@@ -3,28 +3,13 @@ import { motion } from "framer-motion"
 
 
 const titulo = [
-  "Portfolio",
-  "universitario de",
-  "arquitecto -en",
-  "proceso- radicado",
-  "en Córdoba (Ar)."
+  "Portfolio Web",
+  "Arquitectónico",
 ]
 
 export const Banner = () => {
   return (
     <div className="banner">
-        {/* <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{
-        ease: "easeInOut",
-        duration: 0.9,
-        delay: 0.2,
-        }}
-        className="banner-titulo">
-            <h2 className="banner-titulo-arquitecto">Portfolio universitario de arquitecto -en proceso, radicado en Córdoba (Ar).</h2>
-          
-        </motion.div> */}
         <MaskText />
         <div className="banner-end">
         </div>

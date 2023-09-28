@@ -9,7 +9,6 @@ export const Home = () => {
         <Header />
         <Banner />
         <PrimerProyecto />
-        {/* <PruebaHover /> */}
     </div>
   )
 }

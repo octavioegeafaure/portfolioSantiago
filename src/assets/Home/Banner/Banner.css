@@ -1,5 +1,5 @@
 .banner{
-    height: 60vh;
+    height: 90vh;
     display: flex;
     width: 100%;
     padding-top: 3rem;
@@ -16,7 +16,7 @@
     /* line-height: 4.8rem; */
     /* padding-bottom: 2rem; */
     font-weight: 500;
-    font-size: 6vw;
+    font-size: 7vw;
     letter-spacing: 3px;
     z-index: 999;
 }
@@ -67,12 +67,11 @@
 }
 @media only screen and (max-width: 438px) {
     .banner {
-        height: 50vh;
+        /* height: 50vh; */
     }
     .banner-titulo {
         margin-top: -0.5rem;
     }
-
     .banner-titulo-arquitecto {
         font-size: 9vw;
     }
