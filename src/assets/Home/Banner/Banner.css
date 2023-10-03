@@ -1,27 +1,30 @@
 .banner{
     height: 100vh;
-    max-width: 70%;
-    margin-top: -.5rem;
+    display: flex;
+    justify-content: flex-end;
+    /* min-width: 100%; */
 }
 .image-container{
     margin: 0;
+    margin-top: -1rem;
     margin-right: -1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 .image-container-img{
-    height: 100vh;
-    /* object-fit: cover;
-    object-position: center;
-    object-fit: contain; */
+    height: 102vh;
 }
 
 @media only screen and (max-width: 800px) {
     .banner{
-        height: 45vh;
+        height: 75vh;
         max-width: 100%;
     }
     .image-container-img{
-        height: 40vh;
+        height: 60vh;
+        /* width: 100%; */
         /* aspect-ratio: 16 / 9; */
         object-fit: cover;
         object-position: center;
