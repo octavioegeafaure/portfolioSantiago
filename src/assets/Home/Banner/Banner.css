@@ -19,13 +19,13 @@
 
 @media only screen and (max-width: 800px) {
     .banner{
-        display: block;
-
+        /* display: block; */
+        align-items: baseline;
     }
     .image-container{
-        justify-content: end;
+        /* justify-content: end; */
     }
     .image-container-img{
-        height: 70vh;
+        height: 50vh;
     }
 }
