@@ -9,6 +9,7 @@
 @media only screen and (max-width: 800px) {
     .home{
         margin-left: -.5rem;
+        display: flex;
         flex-direction: column-reverse;
     }
 }
