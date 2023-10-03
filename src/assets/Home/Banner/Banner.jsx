@@ -12,8 +12,8 @@ import filtro from "../../../../public/Images/filtro.jpg"
 export const Banner = () => {
   const [images, setImages] = useState([
   banner,  
-  // taller,
-  // filtro,
+  taller,
+  filtro,
   intercambiador,
   ])
   

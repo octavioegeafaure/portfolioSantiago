@@ -5,21 +5,23 @@
 }
 .image-container{
     margin: 0;
+    margin-right: -1rem;
+    overflow: hidden;
 }
 .image-container-img{
     height: 100vh;
-    /* aspect-ratio: 16 / 9; */
-    object-fit: cover;
+    /* object-fit: cover;
     object-position: center;
-    object-fit: contain;
+    object-fit: contain; */
 }
+
 @media only screen and (max-width: 800px) {
     .banner{
-        height: 60vh;
-        /* width: 100vw; */
+        height: 45vh;
+        max-width: 100%;
     }
     .image-container-img{
-        height: 50vh;
+        height: 40vh;
         /* aspect-ratio: 16 / 9; */
         object-fit: cover;
         object-position: center;

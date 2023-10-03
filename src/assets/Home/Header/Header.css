@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    /* width: 30%; */
+    width: 30%;
     /* height: 97vh; */
     /* align-content: space-between; */
     /* overflow: hidden; */
@@ -31,5 +31,14 @@
     .header{
         display: flex;
         width: 100%;
+        /* height: 30%; */
+    }
+    .header-motion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .header-nombre{
+        padding-bottom: 5rem;
     }
 }
