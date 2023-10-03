@@ -44,7 +44,7 @@ export const Banner = () => {
   return (
     <div className="banner">
       <div className="image-container">
-        <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} className="image-container-img" />
+        <img  src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} className="image-container-img" />
       </div>
     </div>
   );
