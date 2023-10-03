@@ -1,15 +1,11 @@
 import { Banner } from "./Banner/Banner"
 import { Header } from "./Header/Header"
-import PrimerProyecto from "./PrimerProyecto/PrimerProyecto"
-import SegundoProyecto from "./SegundoProyecto/SegundoProyecto"
-
+import "./Home.css"
 export const Home = () => {
   return (
-    <div>
+    <div className="home">
         <Header />
         <Banner />
-        <PrimerProyecto />
-        <SegundoProyecto />
     </div>
   )
 }

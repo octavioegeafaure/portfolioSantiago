@@ -1,0 +1,13 @@
+.home{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    /* display: grid;
+    grid-template-columns: 50% ; */
+}
+@media only screen and (max-width: 800px) {
+    .home{
+        margin-left: -.5rem;
+        flex-direction: column-reverse;
+    }
+}

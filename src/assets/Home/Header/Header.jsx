@@ -25,26 +25,19 @@ export const Header = () => {
             <h1 className="header-nombre">santiago espeche</h1>
         </div>
 
-        <nav ref={navRef}>
+        
           <div className="header-menu">
               <motion.h4 className="header-menu-proyectos"       
-              >projects
+              >projects,
               </motion.h4>
-              <h4 className="header-menu-eliminarcoma">,</h4>
+              {/* <h4 className="header-menu-eliminarcoma">,</h4> */}
               <motion.h4
-              className="header-menu-about">about</motion.h4>
-              <button
-              className="header-boton header-cerrar-boton"
-              onClick={mostrarNavBar}
-              >
-              cerrar
-              </button>
+              className="header-menu-about">about,</motion.h4>
+              <motion.h4
+              className="header-menu-about">contact.</motion.h4>
+
           </div>
-        </nav>
-        <button className="header-boton" onClick={mostrarNavBar}>
-          
-          menu
-        </button>
+        
       </motion.div>
     </div>
   )

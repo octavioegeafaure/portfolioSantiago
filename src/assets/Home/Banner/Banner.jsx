@@ -1,41 +1,52 @@
 import "./Banner.css"
-import { motion } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useState } from "react";
+import banner from "../../../../public/Images/tallermura.png"
+import taller from "../../../../public/Images/tallertissot.png"
+import intercambiador from "../../../../public/Images/intercambiador.jpg"
+import filtro from "../../../../public/Images/filtro.jpg"
 
 
-const titulo = [
-  "Architecture",
-  "Web Portfolio.",
-  
-]
+
 
 export const Banner = () => {
+  const [images, setImages] = useState([
+  banner,  
+  // taller,
+  // filtro,
+  intercambiador,
+  ])
+  
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000); 
+
+    return () => {
+      clearInterval(interval); 
+    };
+  }, [images]);
+
+  // botonera para pasar de imagenes
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      (prevIndex - 1 + images.length) % images.length
+    );
+  };
+
   return (
     <div className="banner">
-        <MaskText />
-        <div className="banner-end">
-        </div>
+      <div className="image-container">
+        <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} className="image-container-img" />
+      </div>
     </div>
-  )
+  );
 }
 
-export function MaskText() {
-
-  const animation = {
-    initial: {y: "100%"},
-    enter: i => ({y: "0", transition: {duration: 0.7, ease: [0.33, 1, 0.68, 1],  delay: 0.075 * i}})
-  }
-
-
-
-  return(
-    <div className="efectos">
-      {
-        titulo.map( (phrase, index) => {
-          return <div key={index} className="banner-titulo">
-            <motion.h1 className="banner-titulo-arquitecto"custom={index} variants={animation} initial="initial" animate="enter">{phrase}</motion.h1>
-          </div>
-        })
-      }
-    </div>
-  )
-}
