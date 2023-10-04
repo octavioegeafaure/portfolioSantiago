@@ -1,20 +1,25 @@
 import "./Banner.css"
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
-import banner from "../../../../public/Images/tallermura.png"
-import taller from "../../../../public/Images/tallertissot.png"
-import intercambiador from "../../../../public/Images/intercambiador.jpg"
-import filtro from "../../../../public/Images/filtro.jpg"
-
-
+import biblioteca from "../../../../public/Images/bibliotecaPortada.webp"
+import densidadVacio from "../../../../public/Images/densidadVacioPortada.webp"
+import duplex from "../../../../public/Images/duplexPortada.webp"
+import edificio from "../../../../public/Images/edificioPortada.webp"
+import housingTerrazaVacio from "../../../../public/Images/housingTerrazaVacio.webp"
+import intercambiador from "../../../../public/Images/intercambiadorPortada.webp"
+import mercado from "../../../../public/Images/mercadoPortada.webp"
 
 
 export const Banner = () => {
   const [images, setImages] = useState([
-  banner,  
-  taller,
-  filtro,
-  intercambiador,
+    biblioteca,  
+    densidadVacio,
+    duplex,
+    edificio,
+    housingTerrazaVacio,
+    
+    mercado,
+    intercambiador,
   ])
   
   const [currentIndex, setCurrentIndex] = useState(0);

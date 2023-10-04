@@ -27,6 +27,7 @@
         /* justify-content: end; */
     }
     .image-container-img{
-        height: 60vh;
+        height: 50vh;
+        /* width: 100%; */
     }
 }
