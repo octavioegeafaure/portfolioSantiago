@@ -1,13 +1,13 @@
 import "./Banner.css"
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
-import biblioteca from "../../../../public/Images/bibliotecaPortada.webp"
-import densidadVacio from "../../../../public/Images/densidadVacioPortada.webp"
-import duplex from "../../../../public/Images/duplexPortada.webp"
-import edificio from "../../../../public/Images/edificioPortada.webp"
-import housingTerrazaVacio from "../../../../public/Images/housingTerrazaVacio.webp"
-import intercambiador from "../../../../public/Images/intercambiadorPortada.webp"
-import mercado from "../../../../public/Images/mercadoPortada.webp"
+import biblioteca from "../../public/Images/bibliotecaPortada.webp"
+import densidadVacio from "../../public/Images/densidadVacioPortada.webp"
+import duplex from "../../public/Images/duplexPortada.webp"
+import edificio from "../../public/Images/edificioPortada.webp"
+import housingTerrazaVacio from "../../public/Images/housingTerrazaVacio.webp"
+import intercambiador from "../../public/Images/intercambiadorPortada.webp"
+import mercado from "../../public/Images/mercadoPortada.webp"
 
 
 export const Banner = () => {
@@ -17,7 +17,6 @@ export const Banner = () => {
     duplex,
     edificio,
     housingTerrazaVacio,
-    
     mercado,
     intercambiador,
   ])

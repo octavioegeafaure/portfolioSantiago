@@ -1,6 +1,7 @@
 import "./Header.css"
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "wouter";
 
 
 export const Header = () => {
@@ -22,7 +23,9 @@ export const Header = () => {
         className="header-motion"
       > 
         <div>
+          <Link href="/portfolioSantiago/">
             <h1 className="header-nombre">santiago espeche.</h1>
+          </Link>
         </div>
           <div className="header-menu">
               <motion.h4 className="header-menu-proyectos"       
@@ -31,8 +34,13 @@ export const Header = () => {
               {/* <h4 className="header-menu-eliminarcoma">,</h4> */}
               <motion.h4
               className="header-menu-about">about</motion.h4>
-              <motion.h4
-              className="header-menu-about">contact</motion.h4>
+              <Link href="/portfolioSantiago/contact">
+                <motion.h4
+                className="header-menu-about">
+                  contact
+                </motion.h4>
+              </Link>
+
 
           </div>
         

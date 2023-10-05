@@ -1,15 +1,15 @@
 import './App.css'
-import { Home } from './assets/Home/Home'
-import { HashRouter } from "react-router-dom";
-function App() {
-  
+import { Home } from './Home'
+import { Route } from "wouter";
+import { Header } from './Header/Header';
+import { Banner } from './Banner/Banner';
+import { Footer } from './Footer/Footer';
 
+function App() {
   return (
     <>
-    <HashRouter>
-      <Home />
-    </HashRouter>
-      
+        <Route path="/portfolioSantiago"  ><Home /></Route>
+        <Route path="/portfolioSantiago/contact"  ><Footer /></Route>
     </>
   )
 }
