@@ -8,6 +8,10 @@
     margin-top: -1.2rem;
     font-size: 1.4rem;
 }
+.footer-container-a a{
+    text-decoration: none;
+    color: #333333;
+}
 .footer-container-ciudad{
     /* display: flex; */
     /* width: 55%; */
