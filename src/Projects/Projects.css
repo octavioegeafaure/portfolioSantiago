@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    height: 100vh;
+    /* Align items at the top */
+}
+
+.list {
+    padding-left: 4rem;
+    padding-top: .5rem;
+    /* width: 70%; */
+    /* max-height: 400px; */
+    /* Set a fixed maximum height */
+    overflow-y: auto;
+    /* Enable vertical scrolling if needed */
+}
+
+.list-item {
+    padding-top: .2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.image {
+    width: 90%;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+}

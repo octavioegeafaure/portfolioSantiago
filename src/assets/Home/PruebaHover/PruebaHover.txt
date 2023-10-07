@@ -1,0 +1,50 @@
+// // import { Header } from "../Header/Header"
+// import "./Projects.css"
+// import housingTerrazaVacio from "../../public/Images/housingTerrazaVacio.webp"
+// import PruebaHover from "../assets/Home/PruebaHover/PruebaHover"
+// import { useState } from "react"
+// export const Projects = () => {
+//   return (
+//     <div className="projects">
+//         <Header />
+//         <div className="container-proyectos">
+//         <Proyecto titulo={"Minimun Housing"}anio={"2023"} img={housingTerrazaVacio} />
+//         <Proyecto titulo={"Minimun Housing"}anio={"2023"} img={housingTerrazaVacio} />
+//         </div>
+//     </div>
+//   )
+// }
+// // hacer componente de texto y componente de imagen separado, pero como se comunican entre ellos ? iran cada uno en su div?
+// const Proyecto = ({titulo, anio,img}) => {
+
+//   const [isHovering, setIsHovering] = useState(false);
+//   const handleMouseOver = () => {
+//     setIsHovering(true);
+//   };
+//   const handleMouseOut = () => {
+//     setIsHovering(false);
+//   };
+//     return (
+//       <div className="proyecto">
+//         <div className="proyecto-container">
+//           <div 
+//           className="proyecto-container-texto">
+//             <div className="proyecto-container-texto-flex"            
+//               onMouseOver={handleMouseOver}
+//               onMouseOut={handleMouseOut}>
+//               <p className="proyecto-container-texto-p">{anio}</p>
+//               <p className="proyecto-container-texto-p">{titulo}</p> 
+//               </div>
+//           </div>
+//           {isHovering && (
+//           <div className="proyecto-container-imagen">
+//             {/* <p>{titulo}</p> */}
+//             <img
+//               src={img}
+//               className={`proyecto-container-imagen-img`} 
+//               />        
+//           </div>
+//           )}
+//         </div>
+//       </div>
+// )}

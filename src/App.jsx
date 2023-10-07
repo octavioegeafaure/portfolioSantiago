@@ -1,15 +1,15 @@
 import './App.css'
-import { Home } from './Home'
 import { Route } from "wouter";
-import { Header } from './Header/Header';
-import { Banner } from './Banner/Banner';
+import { Home } from './Home'
 import { Footer } from './Footer/Footer';
+import {Projects} from './Projects/Projects';
 
 function App() {
   return (
     <>
         <Route path="/portfolioSantiago"  ><Home /></Route>
         <Route path="/portfolioSantiago/contact"  ><Footer /></Route>
+        <Route path="/portfolioSantiago/projects"  ><Projects /></Route>
     </>
   )
 }

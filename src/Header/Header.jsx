@@ -28,9 +28,12 @@ export const Header = () => {
           </Link>
         </div>
           <div className="header-menu">
+            <Link href="/portfolioSantiago/projects">
               <motion.h4 className="header-menu-proyectos"       
               >projects
-              </motion.h4>
+              </motion.h4>              
+            </Link>
+
               {/* <h4 className="header-menu-eliminarcoma">,</h4> */}
               <motion.h4
               className="header-menu-about">about</motion.h4>
