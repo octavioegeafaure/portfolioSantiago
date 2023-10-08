@@ -8,13 +8,14 @@ import intercambiadorPortada from "../../public/Images/intercambiadorPortada.web
 import { Header } from '../Header/Header';
 
 export const Projects = () => {
-  const [hoveredImage, setHoveredImage] = useState(null);
+  const [hoverImagen, setHoverImagen] = useState(null);
+
 
   const items = [
-    { id: 1, text: 'Housing', imageSrc: housingTerrazaVacio },
-    { id: 2, text: 'UNC Postgraduate Library', imageSrc: biblioteca },
-    { id: 3, text: 'Building', imageSrc: edificioPortada},
-    { id: 4, text: 'UNC Intermodal Station', imageSrc: intercambiadorPortada },
+    { id: 1, texto: 'Housing', imagenSrc: housingTerrazaVacio },
+    { id: 2, texto: 'UNC Postgraduate Library', imagenSrc: biblioteca },
+    { id: 3, texto: 'Building', imagenSrc: edificioPortada},
+    { id: 4, texto: 'UNC Intermodal Station', imagenSrc: intercambiadorPortada },
     // { id: 5, text: 'Biblioteca Posgrado FAUD', imageSrc: biblioteca },
     // { id: 6, text: 'Biblioteca Posgrado FAUD', imageSrc: biblioteca },
     // { id: 7, text: 'Biblioteca Posgrado FAUD', imageSrc: biblioteca },
@@ -23,27 +24,30 @@ export const Projects = () => {
     // Add more items as needed
   ];
 
-  const handleMouseEnter = (imageSrc) => {
-    setHoveredImage(imageSrc);
+  const handleMouseEnter = (imagenSrc) => {
+    setHoverImagen(imagenSrc);
   };
 
   return (
-    <div className="container">
+    <div className="imagen-container">
       <Header />
-      <div className="list">
+      <div className='imagen-container-derecha'>
+        <div className="imagen-container-list">
         {items.map((item) => (
           <div
             key={item.id}
-            className="list-item"
-            onMouseEnter={() => handleMouseEnter(item.imageSrc)}
+            className="imagen-container-list-item"
+            onMouseEnter={() => handleMouseEnter(item.imagenSrc)}
           >
-            {item.text}
+            {item.texto}
           </div>
         ))}
       </div>
-      <div className="image">
-        {hoveredImage && <img src={hoveredImage} alt="Hovered Item" />}
+      <div className="custom-image">
+        {hoverImagen  && <img src={hoverImagen } alt="Hovered Item" />}
       </div>
+      </div>
+
     </div>
   );
 };
