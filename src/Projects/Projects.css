@@ -47,7 +47,7 @@ img {
 }
 }
 @media (max-width: 600px) {
-    img {
+    .custom-image {
         display: none;
     }
 }
