@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from "wouter";
 import housingTerrazaVacio from "../../public/Images/housingTerrazaVacio.webp"
 import biblioteca from "../../public/Images/bibliotecaPortada.webp"
-import biblioteca1 from "../../public/Images/julio2023bilioteca/ANAQUELESARRIBA-min.jpg"
-import biblioteca2 from "../../public/Images/julio2023bilioteca/ANAQUELESENTRADA-min.jpg"
-import biblioteca3 from "../../public/Images/julio2023bilioteca/AREADETRABAJO-min.jpg"
+import biblioteca1 from "../../public/Images/julio2023biblioteca/ANAQUELESARRIBA-min.jpg"
+import biblioteca2 from "../../public/Images/julio2023biblioteca/ANAQUELESENTRADA-min.jpg"
+// import biblioteca3 from "../../public/Images/julio2023bilioteca/AREADETRABAJO-min.jpg"
 import edificioPortada from "../../public/Images/edificioPortada.webp"
 import intercambiadorPortada from "../../public/Images/intercambiadorPortada.webp"
 import { Header } from '../Header/Header';
