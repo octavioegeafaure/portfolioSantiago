@@ -47,15 +47,34 @@
 img {
     /*     */
 }
+@media (max-width: 1050px) {
+    .imagen-container {
+        display: grid;
+        grid-template-columns: 26% 74%;
+    }
+
+}
+
 @media (max-width: 800px) {
     .imagen-container {
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-end;
-        height: 60vh;
+        height: 100vh;
+        width: 100%;
+    }
+    .imagen-container-derecha{
+        grid-template-columns: 100% 0%;
+    /* padding-top: .6rem; */
     }
     .imagen-container-list {
     padding-left: 0rem;
+    }
+
+    .custom-img {
+    height: 0%;
+    display: flex;
+    /* justify-content: end; */
 }
 }
 @media (max-width: 600px) {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Projects.css'; // Create this CSS file for styling
 import housingTerrazaVacio from "../../public/Images/housingTerrazaVacio.webp"
 import biblioteca from "../../public/Images/bibliotecaPortada.webp"
@@ -9,8 +9,20 @@ import { Link } from 'wouter';
 
 export const Projects = () => {
   const [hoverImagen, setHoverImagen] = useState(null);
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 800;
 
 
+  useEffect(() => {
+   const handleResizeWindow = () => setWidth(window.innerWidth);
+    // subscribe to window resize event "onComponentDidMount"
+    window.addEventListener("resize", handleResizeWindow);
+    return () => {
+      // unsubscribe "onComponentDestroy"
+      window.removeEventListener("resize", handleResizeWindow);
+    };
+  }, []);
+  
   const items = [
     { id: 1, url:"housing",texto: 'Minimum Housing', imagenSrc: housingTerrazaVacio,className:"custom-image" },
     { id: 2, url:"library",texto: 'UNC Postgraduate Library', imagenSrc: biblioteca },
@@ -25,7 +37,10 @@ export const Projects = () => {
 
   return (
     <div className="imagen-container">
-      <Header />
+      <div>
+       <Header /> 
+      </div>
+      
       <div className='imagen-container-derecha'>
         <div className="imagen-container-list">
         {items.map((item) => (
@@ -41,9 +56,13 @@ export const Projects = () => {
         ))}
         
         </div>
+        {width > breakpoint ? 
         <div className='custom-img'>
+          
           {hoverImagen  && <img  src={hoverImagen } className="custom-image"alt="Hovered Item" />}
         </div>
+          : null}
+        
       </div>
 
     </div>
