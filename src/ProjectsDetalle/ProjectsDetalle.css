@@ -1,0 +1,95 @@
+.imagen-container-proyecto{
+    /* width: 100%; */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: space-between;
+    /* justify-content: end; */
+}
+.imagen-container-proyecto-derecha{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.imagen-container-proyecto-derecha-imagen{
+    height: 100%;
+}
+.imagen-container-proyecto-derecha-imagen-img{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.proyecto-img{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    height: 40%
+}
+.imagen-container-proyecto-medio-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding-right: 2rem;
+}
+.imagen-container-proyecto-medio-container-titulo {
+    margin: 0;
+    padding-top: .2rem;
+    padding-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #000000;
+}
+.imagen-container-proyecto-medio-container-unidades{
+    display: flex;
+    justify-content: space-between;
+}
+.imagen-container-proyecto-medio-container-unidades-p{
+    color: #333333;
+}
+.imagen-container-proyecto-medio-container-unidades-p p{
+    margin: 0rem;
+    margin-top: .4rem;
+    /* padding: 0; */
+}
+.info{
+    color: #000000;
+}
+.imagen-container-proyecto-derecha-imagen-img-botones{
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+@media (max-width: 800px) {
+    .imagen-container-proyecto{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .imagen-container-proyecto-derecha {
+        display: flex;
+        flex-direction: column;
+        /* height: 60vh; */
+    }
+    .imagen-container-proyecto-derecha-imagen-img{
+        display: block;
+    }
+    .imagen-container-proyecto-medio-container{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 1rem;
+    }
+    .proyecto-img{
+        width:  50vh;
+    }
+    .imagen-container-proyecto-derecha-imagen-img-botones{
+        width: 50vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .custom-image {
+        display: none;
+    }
+}

@@ -24,11 +24,11 @@ export const Header = () => {
       > 
         <div>
           <Link href="/portfolioSantiago/">
-            <h1 className="header-nombre">santiago espeche.</h1>
+            <h1 className="header-nombre">santiago espeche</h1>
           </Link>
         </div>
           <div className="header-menu">
-            <Link href="/portfolioSantiago/projects">
+            <Link href="/portfolioSantiago/projects/">
               <motion.h4 className="header-menu-proyectos"       
               >projects
               </motion.h4>              
@@ -43,8 +43,6 @@ export const Header = () => {
                   contact
                 </motion.h4>
               </Link>
-
-
           </div>
         
       </motion.div>

@@ -1,39 +1,51 @@
 .imagen-container {
     display: grid;
     grid-template-columns: 20% 80% ;
-    height: 100vh;
+    /* height: 100vh; */
     /* height: 100vh; */
     /* Align items at the top */
 }
 .imagen-container-derecha{
     display: grid;
-    /* height: 60vh; */
-    grid-template-columns: 50% 50%;
+    height: 100vh;
+    grid-template-columns: 40% 60%;
+    /* padding-top: .6rem; */
 }
 .imagen-container-list {
-    height: 80vh;
-    padding-left: 4rem;
-    padding-top: .5rem;
+    /* height: 100%; */
+    /* padding-top: 1rem; */
     /* width: 70%; */
     /* max-height: 400px; */
-    /* Set a fixed maximum height */
-    overflow-y: auto;
+    /* overflow-y: auto; */
     /* Enable vertical scrolling if needed */
 }
 
 .imagen-container-list-item {
     padding-top: .2rem;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    /* color: #333333; */
 }
-
-.custom-imagen {
-    /* width: 90%; */
-    padding: 20px;
+.imagen-container-list-item-link  {
+    text-decoration: none;
+    color: #333333;
+}
+.custom-img{
+    width: 100%;
+    object-fit: contain;
+    object-fit: cover;
+}
+.custom-image{
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
 }
 
 img {
-    max-width: 100%;
+    /*     */
 }
 @media (max-width: 800px) {
     .imagen-container {
@@ -49,5 +61,8 @@ img {
 @media (max-width: 600px) {
     .custom-image {
         display: none;
+    }
+    img{
+        /* max-width: 100%; */
     }
 }
