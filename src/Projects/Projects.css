@@ -51,7 +51,7 @@ img {
     .imagen-container {
         display: grid;
         grid-template-columns: 26% 74%;
-        height: 90vh;
+        height: 100vh;
         /* justify-content: space-around; */
     }
 
