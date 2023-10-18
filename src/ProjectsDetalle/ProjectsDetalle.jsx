@@ -14,7 +14,7 @@ import "./ProjectsDetalle.css"
     { id: 2, url:"library",titulo: 'UNC Postgraduate Library',project:"",location:" Córdoba National University",year:"2023",status:"Project",sector:"Institutional", imagenSrc: [biblioteca, biblioteca1,biblioteca2,biblioteca1]},
     { id: 3, url:"building",titulo: 'Residential Building',project:"",location:"Downtown Area, Córdoba, (Ar)",year:"2021",status:"Project",sector:"Residential", imagenSrc: [edificioPortada]},
     { id: 4, url:"intermodal",titulo: 'UNC Intermodal Station',project:"",location:"Córdoba National University",year:"2023",status:"Project",sector:"Intermodal Station", imagenSrc: [intercambiadorPortada ]},
-    { id: 5, url:"void",titulo: 'The Void Density',project:"",location:"No Context",year:"2022",status:"Project",sector:"Exploration", imagenSrc: [biblioteca, ]},
+    { id: 5, url:"void",titulo: 'The Density in the Void',project:"",location:"No Context",year:"2022",status:"Project",sector:"Exploration", imagenSrc: [biblioteca, ]},
   ];
 
 

@@ -28,7 +28,7 @@ export const Projects = () => {
     { id: 2, url:"library",texto: 'UNC Postgraduate Library', imagenSrc: biblioteca },
     { id: 3, url:"building",texto: 'Building', imagenSrc: edificioPortada},
     { id: 4, url:"intermodal",texto: 'UNC Intermodal Station', imagenSrc: intercambiadorPortada },
-    { id: 5, url:"void",texto: 'The Void Density',project:"",location:"No Context",year:"2022",status:"Project",sector:"Exploration", imagenSrc: [biblioteca, ]},    
+    { id: 5, url:"void",texto: 'The Density in the Void',project:"",location:"No Context",year:"2022",status:"Project",sector:"Exploration", imagenSrc: [biblioteca, ]},    
   ];
 
   const handleMouseEnter = (imagenSrc) => {
