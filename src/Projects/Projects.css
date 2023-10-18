@@ -1,7 +1,7 @@
 .imagen-container {
     display: grid;
     grid-template-columns: 20% 80% ;
-    /* height: 100vh; */
+    height: 100vh;
     /* height: 100vh; */
     /* Align items at the top */
 }
@@ -51,6 +51,8 @@ img {
     .imagen-container {
         display: grid;
         grid-template-columns: 26% 74%;
+        height: 100vh;
+        /* justify-content: space-around; */
     }
 
 }
@@ -60,7 +62,7 @@ img {
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-end;
-        height: 100vh;
+        /* height: 110vh; */
         width: 100%;
     }
     .imagen-container-derecha{
