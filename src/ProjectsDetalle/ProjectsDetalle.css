@@ -103,6 +103,7 @@
     }
     .imagen-container-proyecto-derecha-imagen-img{
         display: block;
+        /* width: 30vh; */
     }
     .imagen-container-proyecto-medio-container{
         display: flex;
@@ -111,10 +112,10 @@
     }
     .proyecto-img{
         padding-right: 1rem;
-        width:  50vh;
+        width:  100%;
     }
     .imagen-container-proyecto-derecha-imagen-img-botones{
-        width: 50vh;
+        width: 100%;
     }
 }
 
