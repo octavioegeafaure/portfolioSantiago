@@ -1,8 +1,9 @@
 .imagen-container {
     display: grid;
     grid-template-columns: 20% 80% ;
-    height: 95vh;
+    height: 100vh;
 }
+
 .imagen-container-derecha{
     display: grid;
     height: 100vh;
@@ -59,16 +60,19 @@ img {
     .imagen-container {
         display: flex;
         flex-direction: column-reverse;
-        justify-content: flex-end;
-        /* height: 110vh; */
+        padding-top: 4rem;
+        /* justify-content: flex-end; */
         width: 100%;
     }
     .imagen-container-derecha{
         grid-template-columns: 100% 0%;
     /* padding-top: .6rem; */
     }
+    .imagen-container-header{
+        padding-bottom: 1rem;
+    }
     .imagen-container-list {
-    padding-left: 0rem;
+        padding-left: 0rem;
     }
 
     .custom-img {

@@ -37,7 +37,7 @@ export const Projects = () => {
 
   return (
     <div className="imagen-container">
-      <div>
+      <div className="imagen-container-header">
        <Header /> 
       </div>
       
