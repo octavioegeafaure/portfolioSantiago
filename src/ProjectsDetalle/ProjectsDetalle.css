@@ -130,6 +130,9 @@
 }
 
 @media (max-width: 600px) {
+    .imagen-container-proyecto-medio-container-titulo{
+        padding-bottom: .5rem;
+    }
     .custom-image {
         display: none;
     }
