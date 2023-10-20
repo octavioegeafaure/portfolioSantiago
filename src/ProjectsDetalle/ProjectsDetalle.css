@@ -91,6 +91,9 @@
     .imagen-container-proyecto-derecha-imagen-img-botones {
         width: 70vw;
     }
+    .info{
+        padding-left: 2rem;
+    }
 }
 
 @media (max-width: 800px) {
