@@ -60,7 +60,7 @@ img {
     .imagen-container {
         display: flex;
         flex-direction: column-reverse;
-        padding-top: 4rem;
+        /* padding-top: 4rem; */
         /* justify-content: flex-end; */
         width: 100%;
     }
