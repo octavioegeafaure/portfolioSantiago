@@ -100,7 +100,7 @@
     .imagen-container-proyecto {
         display: flex;
         flex-direction: column-reverse;
-        padding-top: 1rem;
+        /* padding-top: 1rem; */
     }
 
     .imagen-container-proyecto-derecha {
