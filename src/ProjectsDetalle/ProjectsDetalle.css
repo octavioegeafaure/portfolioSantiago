@@ -130,6 +130,9 @@
     .imagen-container-proyecto-derecha-imagen-img-botones {
         width: 100%;
     }
+    .imagen-container-proyecto-medio-container-titulo{
+        padding-bottom: 1rem;
+    }
 }
 
 @media (max-width: 600px) {
