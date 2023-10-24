@@ -19,7 +19,7 @@ import edificioPortada from "../../public/Images/edificioPortada.webp"
 import intercambiadorPortada from "../../public/Images/intercambiadorPortada.webp"
 
 export const items = [
-    { id: 1, url:"housing",titulo: 'Minimun Housing',project:"",location:"Downtown Area, Córdoba, (Ar)",year:"2021",status:"Project",sector:"Housing", 
+    { id: 1, url:"housing",titulo: 'Minimum Housing',project:"",location:"Downtown Area, Córdoba, (Ar)",year:"2021",status:"Project",sector:"Housing", 
     imagenSrc: [housingTerrazaVacio] },
     { id: 2, url:"library",titulo: 'UNC Postgraduate Library',project:"",location:" Córdoba National University",year:"2023",status:"Project",sector:"Institutional", 
     imagenSrc: [biblioteca, biblioteca1,biblioteca2,biblioteca3,biblioteca4,biblioteca5,biblioteca6,biblioteca7,biblioteca8,biblioteca9,biblioteca10,biblioteca11,biblioteca12,biblioteca13,biblioteca14,biblioteca15]},

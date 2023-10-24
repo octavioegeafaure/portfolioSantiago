@@ -29,19 +29,21 @@ export const Header = () => {
         </div>
           <div className="header-menu">
             <Link href="/portfolioSantiago/projects/">
-              <motion.h4 className="header-menu-proyectos"       
-              >projects
+              <motion.h4 className="header-menu-proyectos">
+                projects
               </motion.h4>              
             </Link>
-
-              {/* <h4 className="header-menu-eliminarcoma">,</h4> */}
+            <Link href="/portfolioSantiago/about/">
               <motion.h4
-              className="header-menu-about">about</motion.h4>
-              <Link href="/portfolioSantiago/contact">
-                <motion.h4
-                className="header-menu-about">
-                  contact
-                </motion.h4>
+              className="header-menu-about">
+                about
+              </motion.h4>              
+            </Link>
+            <Link href="/portfolioSantiago/contact/">
+              <motion.h4
+              className="header-menu-about">
+                contact
+              </motion.h4>
               </Link>
           </div>
         
