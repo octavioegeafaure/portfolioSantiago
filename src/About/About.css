@@ -1,9 +1,36 @@
 .about{
     width: 100%;
-    display: grid;
-    grid-template-columns: 25% 45%;
+    display: flex;
+    grid-template-columns: 25% 85%;
+    height: 100vh;
+}
+.about-texto{
+    width: 50%;
+    padding-left: 5rem;
 }
 .about-texto-h5{
     font-size: 1.5rem;
     font-weight: 500;
+    padding-top: .2rem;
+    margin: 0;
+}
+@media (max-width: 1000px) {
+    .about-texto-h5 {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 800px) {
+    .about {
+        flex-direction: column-reverse;
+    }
+    .about-texto{
+        height: 25vh;
+        width: 95%;
+        padding-left: 0rem;
+    }
+}
+@media (max-width: 550px) {
+    .about-texto-h5 {
+        font-size: 1.2rem;
+    }
 }
