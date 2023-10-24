@@ -2,10 +2,10 @@
     width: 100%;
     display: flex;
     grid-template-columns: 25% 85%;
-    /* height: 100vh; */
+    height: 100vh;
 }
 .about-header{
-    padding-bottom: 2rem;
+    /* padding-top: 2rem; */
 }
 .about-texto{
     width: 50%;
