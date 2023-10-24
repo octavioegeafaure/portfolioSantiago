@@ -4,6 +4,9 @@
     grid-template-columns: 25% 85%;
     /* height: 100vh; */
 }
+.about-header{
+    padding-bottom: 2rem;
+}
 .about-texto{
     width: 50%;
     padding-left: 5rem;
