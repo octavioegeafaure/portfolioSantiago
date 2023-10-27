@@ -14,9 +14,6 @@ export const ProjectsDetalle = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalImages = item ? item.imagenSrc.length : 0;
   const currentImageNumber = currentIndex + 1;
-  const imageRef = useRef(null);
-
-  // Keep track of touch start position
   const [touchStartX, setTouchStartX] = useState(null);
 
   // Detect swipe gestures
@@ -25,9 +22,11 @@ export const ProjectsDetalle = () => {
   };
 
   const handleTouchEnd = (event) => {
+    if (touchStartX === null) return; // Prevent null reference
+
     const touchEndX = event.changedTouches[0].clientX;
     const deltaX = touchEndX - touchStartX;
-    
+
     // Set a threshold for the swipe to prevent accidental swipes
     const threshold = 50;
 
@@ -38,24 +37,9 @@ export const ProjectsDetalle = () => {
       // Swipe to the left (next image)
       showNextImage();
     }
+
+    setTouchStartX(null); // Reset the start position
   };
-
-  // Attach touch event listeners to the image element
-  useEffect(() => {
-    const imageElement = imageRef.current;
-    if (imageElement) {
-      imageElement.addEventListener('touchstart', handleTouchStart);
-      imageElement.addEventListener('touchend', handleTouchEnd);
-
-      // Clean up event listeners when the component unmounts
-      return () => {
-        imageElement.removeEventListener('touchstart', handleTouchStart);
-        imageElement.removeEventListener('touchend', handleTouchEnd);
-      };
-    }
-  }, [currentIndex]);
-
-
 
   const showPreviousImage = () => {
     if (currentIndex > 0) {
@@ -86,7 +70,13 @@ export const ProjectsDetalle = () => {
     }
   };
   const updateImage = () => {
-    return <img ref={imageRef} onClick={handleImageClick} className='proyecto-img' src={item.imagenSrc[currentIndex]} alt={item.texto} />;
+    return <img       
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd} 
+            onClick={handleImageClick} 
+            className='proyecto-img' 
+            src={item.imagenSrc[currentIndex]} 
+            alt={item.texto} />;
   };
 
 
