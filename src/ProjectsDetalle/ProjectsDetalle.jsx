@@ -26,7 +26,7 @@ export const ProjectsDetalle = () => {
     const deltaX = touchEndX - touchStartX;
     
     // Set a threshold for the swipe to prevent accidental swipes
-    const threshold = 50;
+    const threshold = 25;
 
     if (deltaX > threshold) {
       // Swipe to the right (previous image)
