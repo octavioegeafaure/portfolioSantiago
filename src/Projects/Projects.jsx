@@ -26,7 +26,7 @@ export const Projects = () => {
   const items = [
     { id: 1, url:"housing",texto: 'Minimum Housing', imagenSrc: housingTerrazaVacio,className:"custom-image" },
     { id: 2, url:"library",texto: 'UNC Postgraduate Library', imagenSrc: biblioteca },
-    { id: 3, url:"building",texto: 'Building', imagenSrc: edificioPortada},
+    { id: 3, url:"building",texto: 'Residential Building', imagenSrc: edificioPortada},
     { id: 4, url:"intermodal",texto: 'UNC Intermodal Station', imagenSrc: intercambiadorPortada },
     { id: 5, url:"void",texto: 'The Density in the Void',project:"",location:"No Context",year:"2022",status:"Project",sector:"Exploration", imagenSrc: [biblioteca, ]},    
   ];

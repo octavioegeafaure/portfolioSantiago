@@ -14,6 +14,43 @@ export const ProjectsDetalle = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalImages = item ? item.imagenSrc.length : 0;
   const currentImageNumber = currentIndex + 1;
+  const [touchStartX, setTouchStartX] = useState(null);
+
+  // Detect swipe gestures
+  const handleTouchStart = (event) => {
+    setTouchStartX(event.touches[0].clientX);
+  };
+
+  const handleTouchEnd = (event) => {
+    const touchEndX = event.changedTouches[0].clientX;
+    const deltaX = touchEndX - touchStartX;
+    
+    // Set a threshold for the swipe to prevent accidental swipes
+    const threshold = 50;
+
+    if (deltaX > threshold) {
+      // Swipe to the right (previous image)
+      showPreviousImage();
+    } else if (deltaX < -threshold) {
+      // Swipe to the left (next image)
+      showNextImage();
+    }
+  };
+
+  // Attach touch event listeners to the image element
+  useEffect(() => {
+    const imageElement = document.querySelector('.proyecto-img');
+    if (imageElement) {
+      imageElement.addEventListener('touchstart', handleTouchStart);
+      imageElement.addEventListener('touchend', handleTouchEnd);
+
+      // Clean up event listeners when the component unmounts
+      return () => {
+        imageElement.removeEventListener('touchstart', handleTouchStart);
+        imageElement.removeEventListener('touchend', handleTouchEnd);
+      };
+    }
+  }, [currentIndex]);
 
 
   useEffect(() => {

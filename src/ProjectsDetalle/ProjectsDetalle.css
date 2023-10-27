@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
-    height: 40%
+    max-height: 99vh;
 }
 .imagen-container-proyecto-medio-container{
     height: 100%;
