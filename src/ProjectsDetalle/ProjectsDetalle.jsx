@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from "wouter";
 import {items} from './dataProjects'
 import { Header } from '../Header/Header';
@@ -14,6 +14,9 @@ export const ProjectsDetalle = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalImages = item ? item.imagenSrc.length : 0;
   const currentImageNumber = currentIndex + 1;
+  const imageRef = useRef(null);
+
+  // Keep track of touch start position
   const [touchStartX, setTouchStartX] = useState(null);
 
   // Detect swipe gestures
@@ -26,7 +29,7 @@ export const ProjectsDetalle = () => {
     const deltaX = touchEndX - touchStartX;
     
     // Set a threshold for the swipe to prevent accidental swipes
-    const threshold = 25;
+    const threshold = 50;
 
     if (deltaX > threshold) {
       // Swipe to the right (previous image)
@@ -39,7 +42,7 @@ export const ProjectsDetalle = () => {
 
   // Attach touch event listeners to the image element
   useEffect(() => {
-    const imageElement = document.querySelector('.proyecto-img');
+    const imageElement = imageRef.current;
     if (imageElement) {
       imageElement.addEventListener('touchstart', handleTouchStart);
       imageElement.addEventListener('touchend', handleTouchEnd);
@@ -51,14 +54,6 @@ export const ProjectsDetalle = () => {
       };
     }
   }, [currentIndex]);
-
-
-  useEffect(() => {
-    if (!item) {
-      // Handle the case where the segment does not match any items
-      console.log("Item not found");
-    }
-  }, [item]);
 
 
 
@@ -91,7 +86,7 @@ export const ProjectsDetalle = () => {
     }
   };
   const updateImage = () => {
-    return <img onClick={handleImageClick} className='proyecto-img' src={item.imagenSrc[currentIndex]} alt={item.texto} />;
+    return <img ref={imageRef} onClick={handleImageClick} className='proyecto-img' src={item.imagenSrc[currentIndex]} alt={item.texto} />;
   };
 
 
