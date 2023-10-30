@@ -69,16 +69,37 @@ import intercambiador11 from "../../public/Images/julio2023intercambiador/cortef
 import intercambiador12 from "../../public/Images/julio2023intercambiador/D1.webp"
 import intercambiador13 from "../../public/Images/julio2023intercambiador/D2.webp"
 import intercambiador14 from "../../public/Images/julio2023intercambiador/despiece.webp"
+import building1 from "../../public/Images/noviembre2021/RENDER2.webp"
+import building2 from "../../public/Images/noviembre2021/PORTADA.webp"
+import building3 from "../../public/Images/noviembre2021/PB.webp"
+import building4 from "../../public/Images/noviembre2021/SS.webp"
+import building5 from "../../public/Images/noviembre2021/1P.webp"
+import building6 from "../../public/Images/noviembre2021/2P.webp"
+import building7 from "../../public/Images/noviembre2021/3P.webp"
+import building8 from "../../public/Images/noviembre2021/4P.webp"
+import building9 from "../../public/Images/noviembre2021/5P.webp"
+import building11 from "../../public/Images/noviembre2021/6P.webp"
+import building12 from "../../public/Images/noviembre2021/CORTEBC.webp"
+import building13 from "../../public/Images/noviembre2021/CORTEFACHADA.webp"
+import building14 from "../../public/Images/noviembre2021/AXOCORTADA.webp"
+import building15 from "../../public/Images/noviembre2021/ESTR.webp"
+import building16 from "../../public/Images/noviembre2021/DETALLES.webp"
+import building17 from "../../public/Images/noviembre2021/CIRC.webp"
+import building18 from "../../public/Images/noviembre2021/PROGRAMA.webp"
+import building19 from "../../public/Images/noviembre2021/4DA9D21D-7DF6-4E48-BEDF-2516134603ED.webp"
+import building20 from "../../public/Images/noviembre2021/IMG_1939.webp"
 import edificioPortada from "../../public/Images/edificioPortada.webp"
 import intercambiadorPortada from "../../public/Images/intercambiadorPortada.webp"
 
 export const items = [
     { id: 1, url:"housing",titulo: 'Minimum Housing',project:"",location:"Downtown Area, Córdoba, (Ar)",year:"2021",status:"Project",sector:"Housing", 
-    imagenSrc: [housingTerrazaVacio,housing1,housing2,housing3,housing4,housing5,housing6,housing7,housing8,housing9,housing10,housing11,housing12,housing13,housing14,housing15] },
+    imagenSrc: [housingTerrazaVacio,housing1,housing3,housing4,housing5,housing6,housing7,housing8,housing9,housing10,housing11,housing12,housing13,housing14,housing15] },
     { id: 2, url:"library",titulo: 'UNC Postgraduate Library',project:"",location:" Córdoba National University",year:"2023",status:"Project",sector:"Institutional", 
     imagenSrc: [biblioteca, biblioteca1,biblioteca2,biblioteca3,biblioteca4,biblioteca5,biblioteca6,biblioteca7,biblioteca8,biblioteca9,biblioteca10,biblioteca11,biblioteca12,biblioteca13,biblioteca14,biblioteca15]},
     { id: 3, url:"building",titulo: 'Residential Building',project:"",location:"Downtown Area, Córdoba, (Ar)",year:"2021",status:"Project",sector:"Residential", 
-    imagenSrc: [edificioPortada]},
+    imagenSrc: [edificioPortada,building1,building2,building3,building4,building5,building6,building7
+    ,building8,building9,building11,building12,building13,building14,building15,building16,building17,building18,building19
+    ,building20]},
     { id: 4, url:"intermodal",titulo: 'UNC Intermodal Station',project:"",location:"Córdoba National University",year:"2023",status:"Project",sector:"Intermodal Station", 
     imagenSrc: [intercambiadorPortada,intercambiador2,intercambiador3,intercambiador6
     ,intercambiador7,intercambiador9,intercambiador8,intercambiador10,intercambiador11,intercambiador12,intercambiador13
