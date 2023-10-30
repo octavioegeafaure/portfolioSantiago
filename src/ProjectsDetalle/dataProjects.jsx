@@ -104,7 +104,9 @@ export const items = [
     imagenSrc: [intercambiadorPortada,intercambiador2,intercambiador3,intercambiador6
     ,intercambiador7,intercambiador9,intercambiador8,intercambiador10,intercambiador11,intercambiador12,intercambiador13
     ,intercambiador14 ]},
-    { id: 5, url:"void",titulo: 'The Density in the Void',project:"",location:"No Context",year:"2022",status:"Project",sector:"Exploration", 
+    { id: 5, url:"intermodal",titulo: 'UNC Intermodal Station',project:"",location:"Córdoba National University",year:"2023",status:"Project",sector:"Intermodal Station", 
+    imagenSrc: []},
+    { id: 6, url:"void",titulo: 'The Density in the Void',project:"",location:"No Context",year:"2022",status:"Project",sector:"Exploration", 
     imagenSrc: [densidad1,densidad2,densidad3,densidad4,densidad5,densidad6,densidad7,
     densidad8,densidad10,densidad11,densidad12,densidad13,densidad14,densidad15,densidad16,densidad17,densidad18,densidad19,densidad20,densidad21,densidad22,
     densidad23,densidad24,densidad25,densidad26,

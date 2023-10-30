@@ -4,6 +4,8 @@ import housingTerrazaVacio from "../../public/Images/housingTerrazaVacio.webp"
 import biblioteca from "../../public/Images/bibliotecaPortada.webp"
 import edificioPortada from "../../public/Images/edificioPortada.webp"
 import intercambiadorPortada from "../../public/Images/intercambiadorPortada.webp"
+import mercadoPortada from "../../public/Images/mercadoPortada.webp"
+import densidadVacioPortada from "../../public/Images/densidadVacioPortada.webp"
 import { Header } from '../Header/Header';
 import { Link } from 'wouter';
 
@@ -28,7 +30,8 @@ export const Projects = () => {
     { id: 2, url:"library",texto: 'UNC Postgraduate Library', imagenSrc: biblioteca },
     { id: 3, url:"building",texto: 'Residential Building', imagenSrc: edificioPortada},
     { id: 4, url:"intermodal",texto: 'UNC Intermodal Station', imagenSrc: intercambiadorPortada },
-    { id: 5, url:"void",texto: 'The Density in the Void',project:"",location:"No Context",year:"2022",status:"Project",sector:"Exploration", imagenSrc: [biblioteca, ]},    
+    { id: 5, url:"creativemarket",texto: 'Creative Industries Market',imagenSrc: [mercadoPortada]},    
+    { id: 6, url:"void",texto: 'The Density in the Void',imagenSrc: [densidadVacioPortada, ]},
   ];
 
   const handleMouseEnter = (imagenSrc) => {
