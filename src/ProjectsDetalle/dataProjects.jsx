@@ -90,6 +90,38 @@ import building19 from "../../public/Images/noviembre2021/4DA9D21D-7DF6-4E48-BED
 import building20 from "../../public/Images/noviembre2021/IMG_1939.webp"
 import edificioPortada from "../../public/Images/edificioPortada.webp"
 import intercambiadorPortada from "../../public/Images/intercambiadorPortada.webp"
+import mercado from "../../public/Images/noviembre2022/50.webp"
+import mercado1 from "../../public/Images/noviembre2022/51.webp"
+import mercado2 from "../../public/Images/noviembre2022/52.webp"
+import mercado3 from "../../public/Images/noviembre2022/53.webp"
+import mercado4 from "../../public/Images/noviembre2022/54.webp"
+import mercado5 from "../../public/Images/noviembre2022/55.webp"
+import mercado6 from "../../public/Images/noviembre2022/pb.webp"
+import mercado7 from "../../public/Images/noviembre2022/1p.webp"
+import mercado8 from "../../public/Images/noviembre2022/2p.webp"
+import mercado9 from "../../public/Images/noviembre2022/3p.webp"
+import mercado10 from "../../public/Images/noviembre2022/4p.webp"
+import mercado11 from "../../public/Images/noviembre2022/5p.webp"
+import mercado12 from "../../public/Images/noviembre2022/6p.webp"
+import mercado13 from "../../public/Images/noviembre2022/ss.webp"
+import mercado14 from "../../public/Images/noviembre2022/plantaaudit.webp"
+import mercado15 from "../../public/Images/noviembre2022/plani.webp"
+import mercado16 from "../../public/Images/noviembre2022/1.webp"
+import mercado17 from "../../public/Images/noviembre2022/2.webp"
+import mercado18 from "../../public/Images/noviembre2022/3.webp"
+import mercado19 from "../../public/Images/noviembre2022/4.webp"
+import mercado20 from "../../public/Images/noviembre2022/5.webp"
+import mercado21 from "../../public/Images/noviembre2022/6.webp"
+import mercado22 from "../../public/Images/noviembre2022/7.webp"
+import mercado23 from "../../public/Images/noviembre2022/8.webp"
+import mercado24 from "../../public/Images/noviembre2022/9.webp"
+import mercado25 from "../../public/Images/noviembre2022/10.webp"
+import mercado26 from "../../public/Images/noviembre2022/11.webp"
+import mercado27 from "../../public/Images/noviembre2022/12.webp"
+import mercado28 from "../../public/Images/noviembre2022/13.webp"
+import mercado29 from "../../public/Images/noviembre2022/14.webp"
+import mercado30 from "../../public/Images/noviembre2022/15.webp"
+
 
 export const items = [
     { id: 1, url:"housing",titulo: 'Minimum Housing',project:"",location:"Downtown Area, Córdoba, (Ar)",year:"2021",status:"Project",sector:"Housing", 
@@ -105,8 +137,10 @@ export const items = [
     ,intercambiador7,intercambiador9,intercambiador8,intercambiador10,intercambiador11,intercambiador12,intercambiador13
     ,intercambiador14 ]},
     { id: 5, url:"creativemarket",titulo: 'Creative Industries Market',project:"Córdoba Creative Industries Market",location:"General Paz, Córdoba, (Ar)",year:"2022",status:"Project",sector:"Public Buildings", 
-    imagenSrc: [building1,building2,building3,building4,building5,building6,building7,building8,building9,building11
-    ,building12,building13,building14,building15,building16,building17,building18,building19,building20]},
+    imagenSrc: [mercado,mercado1,mercado2,mercado3,mercado4,mercado5,mercado6,mercado7,mercado8
+    ,mercado9,mercado10,mercado11,mercado12,mercado13,mercado14,mercado15,mercado16,mercado17,mercado18,mercado19
+    ,mercado20,mercado21,mercado22,mercado23,mercado24,mercado25,mercado26,mercado27,mercado28,mercado29
+    ,mercado30]},
     { id: 6, url:"void",titulo: 'The Density in the Void',project:"",location:"No Context",year:"2022",status:"Project",sector:"Exploration", 
     imagenSrc: [densidad1,densidad2,densidad3,densidad4,densidad5,densidad6,densidad7,
     densidad8,densidad10,densidad11,densidad12,densidad13,densidad14,densidad15,densidad16,densidad17,densidad18,densidad19,densidad20,densidad21,densidad22,
