@@ -104,8 +104,9 @@ export const items = [
     imagenSrc: [intercambiadorPortada,intercambiador2,intercambiador3,intercambiador6
     ,intercambiador7,intercambiador9,intercambiador8,intercambiador10,intercambiador11,intercambiador12,intercambiador13
     ,intercambiador14 ]},
-    { id: 5, url:"intermodal",titulo: 'UNC Intermodal Station',project:"",location:"Córdoba National University",year:"2023",status:"Project",sector:"Intermodal Station", 
-    imagenSrc: []},
+    { id: 5, url:"creativemarket",titulo: 'Creative Industries Market',project:"Córdoba Creative Industries Market",location:"General Paz, Córdoba, (Ar)",year:"2022",status:"Project",sector:"Public Buildings", 
+    imagenSrc: [building1,building2,building3,building4,building5,building6,building7,building8,building9,building11
+    ,building12,building13,building14,building15,building16,building17,building18,building19,building20]},
     { id: 6, url:"void",titulo: 'The Density in the Void',project:"",location:"No Context",year:"2022",status:"Project",sector:"Exploration", 
     imagenSrc: [densidad1,densidad2,densidad3,densidad4,densidad5,densidad6,densidad7,
     densidad8,densidad10,densidad11,densidad12,densidad13,densidad14,densidad15,densidad16,densidad17,densidad18,densidad19,densidad20,densidad21,densidad22,
