@@ -35,7 +35,7 @@ const [loaderAnimationComplete, setLoaderAnimationComplete] = useState(false);
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 1, duration: 1.2 }}
+            transition={{ delay: 1.2, duration: 1.2 }}
             variants={{
             visible: { y: -50, opacity: 1 },
             hidden: { y: 0, opacity: 1 },
