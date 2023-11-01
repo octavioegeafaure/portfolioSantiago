@@ -1,21 +1,23 @@
-.home{
+.home {
     height: 100vh;
     display: grid;
-    grid-template-columns: 20% 80% ;
+    grid-template-columns: 20% 80%;
 }
+
 .home-loader {
     position: absolute;
     overflow: hidden;
     margin-left: -1rem;
-    margin-right: -2rem;
-    margin-top: 1rem;
+    margin-right: -1rem;
+    margin-top: -1rem;
     margin-bottom: 1rem;
     background-color: white;
     width: 102vw;
     height: 100vh;
     pointer-events: all;
 }
-.home-loader-texto{
+
+.home-loader-texto {
     margin: 0;
     display: flex;
     height: 100%;
@@ -23,16 +25,19 @@
     justify-content: center;
     z-index: 9999;
 }
-.home-loader-overflow{
+
+.home-loader-overflow {
     margin: 0;
     overflow: hidden;
 }
+
 /* Styles for home-loader when the animation is complete (hidden) */
 .home-loader.animation-complete {
     /* Make the loader transparent and disable interactions */
     opacity: 0;
     pointer-events: none;
 }
+
 .home-loader p {
     margin: 0;
     font-size: 1.4rem;
