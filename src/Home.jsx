@@ -10,10 +10,9 @@ export const Home = () => {
 const [loaderAnimationComplete, setLoaderAnimationComplete] = useState(false);
 
   useEffect(() => {
-    // Use a setTimeout to mark the animation as complete
     setTimeout(() => {
       setLoaderAnimationComplete(true);
-    }, 1000); // Adjust the duration based on your animation's duration
+    }, 2000); 
   }, []);
 
   return (
@@ -49,7 +48,7 @@ const [loaderAnimationComplete, setLoaderAnimationComplete] = useState(false);
 
       </motion.div>
 
-      {/* Render Header and Banner components */}
+      
       <Header className={`header ${loaderAnimationComplete ? 'animation-complete' : ''}`} />
       <Banner className={`banner ${loaderAnimationComplete ? 'animation-complete' : ''}`} />
     </div>

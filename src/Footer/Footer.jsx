@@ -10,12 +10,14 @@ export const Footer = () => {
         <Header />
         <div className="footer-container">
             <div className="footer-container-a">
-                <a href="mailto: santiagoespeche@gmail.com">
-                    <p>santiagoespeche@gmail.com</p>
+                <a href="mailto: sgoespeche2@gmail.com">
+                    <p>sgoespeche2@gmail.com</p>
                 </a>
                 <a target="_blank" rel="noreferrer" href={`https://www.instagram.com/espechesanti/`}>
-                    <p>instagram</p> 
+                    <p>instagram @espechesanti</p> 
                 </a>
+                    <p>+54 9 3855910145</p> 
+                
             </div>
             <div className="footer-container-ciudad">
                 <div >
