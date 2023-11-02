@@ -31,14 +31,13 @@ const [loaderAnimationComplete, setLoaderAnimationComplete] = useState(false);
         <div className="home-loader-texto">
           <div className="home-loader-overflow">
             <motion.p
-            // initial="hidden"
-            // whileInView="visible"
-            // viewport={{ once: true }}
-            // transition={{ delay: 1, duration: .5 }}
-            // variants={{
-            // visible: { y: -50, opacity: 1 },
-            // hidden: { y: 0, opacity: 1 },
-            // }}
+          initial={{ y: 200 }}
+          animate={{ y: 0 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 1,
+            delay: 0.6,
+          }}
           >
           santiago espeche
           </motion.p> 
