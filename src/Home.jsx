@@ -12,7 +12,7 @@ const [loaderAnimationComplete, setLoaderAnimationComplete] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setLoaderAnimationComplete(true);
-    }, 2000); 
+    }, 0); 
   }, []);
 
   return (
@@ -21,7 +21,7 @@ const [loaderAnimationComplete, setLoaderAnimationComplete] = useState(false);
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        transition={{ delay: 1.9, duration: 2 }}
+        transition={{ delay: 1.5, duration: 0.25 }}
         variants={{
           visible: { opacity: 0 },
           hidden: { opacity: 1 },
@@ -31,14 +31,14 @@ const [loaderAnimationComplete, setLoaderAnimationComplete] = useState(false);
         <div className="home-loader-texto">
           <div className="home-loader-overflow">
             <motion.p
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ delay: 1.2, duration: 1.2 }}
-            variants={{
-            visible: { y: -50, opacity: 1 },
-            hidden: { y: 0, opacity: 1 },
-            }}
+            // initial="hidden"
+            // whileInView="visible"
+            // viewport={{ once: true }}
+            // transition={{ delay: 1, duration: .5 }}
+            // variants={{
+            // visible: { y: -50, opacity: 1 },
+            // hidden: { y: 0, opacity: 1 },
+            // }}
           >
           santiago espeche
           </motion.p> 
