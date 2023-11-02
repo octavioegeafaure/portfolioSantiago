@@ -10,10 +10,10 @@
     margin-left: -1rem;
     margin-right: -1rem;
     margin-top: -1rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: -1rem; */
     background-color: white;
     width: 102vw;
-    height: 100vh;
+    height: 102vh;
     pointer-events: all;
 }
 
