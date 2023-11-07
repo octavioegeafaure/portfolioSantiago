@@ -172,6 +172,9 @@
     
 }
 @media (max-width: 400px) {
-    
+    .imagen-container-proyecto {
+        height: 108vh;
+    }
+
 
 }
