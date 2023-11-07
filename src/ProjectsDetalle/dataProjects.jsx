@@ -122,6 +122,7 @@ import mercado28 from "../../public/Images/noviembre2022/13.webp"
 import mercado29 from "../../public/Images/noviembre2022/14.webp"
 import mercado30 from "../../public/Images/noviembre2022/15.webp"
 import duplex from "../../public/Images/noviembre2020/1.webp"
+import duplex1 from "../../public/Images/noviembre2020/duplexPortada.webp"
 import duplex2 from "../../public/Images/noviembre2020/2.webp"
 import duplex3 from "../../public/Images/noviembre2020/3.webp"
 import duplex4 from "../../public/Images/noviembre2020/4.webp"
@@ -181,8 +182,8 @@ export const items = [
       {src:biblioteca8, className: "proyecto-img"},
       {src:biblioteca9, className: "proyecto-img"},
       {src:biblioteca10, className: "proyecto-img"},
-      {src:biblioteca11, className: "proyecto-img"},
       {src:biblioteca12, className: "proyecto-img"},
+      {src:biblioteca11, className: "proyecto-img"},
       {src:biblioteca13, className: "proyecto-img"},
       {src:biblioteca14, className: "proyecto-img"},
       {src:biblioteca15, className: "proyecto-img"},
@@ -212,19 +213,19 @@ export const items = [
     ]},
     { id: 4, url:"intermodal",titulo: 'UNC Intermodal Station',project:"",location:"Córdoba National University",year:"2023",status:"Project",sector:"Intermodal Station", 
     imagenSrc: [
-      {src:intercambiadorPortada, className: "proyecto-img"},
+      // {src:intercambiadorPortada, className: "proyecto-img"},
       {src:intercambiador1, className: "proyecto-img"},
       {src:intercambiador2, className: "proyecto-img"},
       {src:intercambiador3, className: "proyecto-img"},
       {src:intercambiador6, className: "proyecto-img"},
-      {src:intercambiador7, className: "proyecto-img"},
       {src:intercambiador9, className: "proyecto-img"},
-      {src:intercambiador8, className: "proyecto-img"},
-      {src:intercambiador10, className: "proyecto-img"},
+      {src:intercambiador8, className: "large-image"},
+      {src:intercambiador10, className: "large-image"},
       {src:intercambiador11, className: "proyecto-img"},    
+      {src:intercambiador14, className: "proyecto-img"},
+      {src:intercambiador7, className: "proyecto-img"},
       {src:intercambiador12, className: "proyecto-img"},   
       {src:intercambiador13, className: "proyecto-img"},
-      {src:intercambiador14, className: "proyecto-img"},
     ]},
     { id: 5, url:"creativemarket",titulo: 'Creative Industries Market',project:"Córdoba Creative Industries Market",location:"General Paz, Córdoba, (Ar)",year:"2022",status:"Project",sector:"Public Buildings", 
     imagenSrc: [
@@ -291,8 +292,9 @@ export const items = [
     ]},
     { id: 7, url:"duplex",titulo: 'Duplex',project:"",location:"Downtown Area, Córdoba, (Ar)",year:"2020",status:"Project",sector:"Housing", 
     imagenSrc: [
-      {src:duplex, className: "proyecto-img"},
+      {src:duplex1, className: "proyecto-img"},
       {src:duplex2, className: "proyecto-img"},
+      {src:duplex, className: "proyecto-img"},
       {src:duplex3, className: "proyecto-img"},
       {src:duplex4, className: "proyecto-img"},
       {src:duplex5, className: "proyecto-img"},
