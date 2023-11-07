@@ -128,8 +128,9 @@
     }
 
     .imagen-container-proyecto-derecha-imagen-img {
-        display: block;
-        /* height: 100%; */
+        display: flex;
+        justify-content: space-between;
+        height: 55vh;
     }
 
     .imagen-container-proyecto-medio-container {
