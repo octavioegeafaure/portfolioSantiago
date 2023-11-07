@@ -83,7 +83,7 @@ img {
 }
 @media (max-width: 600px) {
     .imagen-container {
-        height: 103vh;
+        /* height: 103vh; */
         /* justify-content: space-around; */
     }
     
