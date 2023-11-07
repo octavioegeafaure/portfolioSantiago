@@ -82,10 +82,9 @@ img {
 }
 }
 @media (max-width: 600px) {
-    .custom-image {
-        display: none;
+    .imagen-container {
+        height: 103vh;
+        /* justify-content: space-around; */
     }
-    img{
-        /* max-width: 100%; */
-    }
+    
 }
