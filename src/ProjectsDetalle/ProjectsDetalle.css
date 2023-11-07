@@ -141,7 +141,7 @@
         width: auto;
         max-width: 95vw;
         padding-right: 1rem;
-        max-height: 35vh;
+        max-height: 45vh;
     }
     .large-image {
         display: flex;
@@ -149,7 +149,7 @@
         cursor: pointer;
         width: auto;
         max-width: 95vw;
-        max-height: 35vh;
+        max-height: 45vh;
         /* width: 100%; */
     }
     .imagen-container-proyecto-derecha-imagen-img-botones {
