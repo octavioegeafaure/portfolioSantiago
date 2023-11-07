@@ -142,7 +142,7 @@
     .proyecto-img {
         width: auto;
         max-width: 95vw;
-        padding-right: 1rem;
+        /* padding-right: 1rem; */
         max-height: 50vh;
     }
     .large-image {
