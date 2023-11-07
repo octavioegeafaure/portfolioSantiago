@@ -6,6 +6,7 @@ import edificioPortada from "../../public/Images/edificioPortada.webp"
 import intercambiadorPortada from "../../public/Images/intercambiadorPortada.webp"
 import mercadoPortada from "../../public/Images/mercadoPortada.webp"
 import densidadVacioPortada from "../../public/Images/densidadVacioPortada.webp"
+import duplexPortada from "../../public/Images/duplexPortada.webp"
 import { Header } from '../Header/Header';
 import { Link } from 'wouter';
 
@@ -32,6 +33,7 @@ export const Projects = () => {
     { id: 4, url:"intermodal",texto: 'UNC Intermodal Station', imagenSrc: intercambiadorPortada },
     { id: 5, url:"creativemarket",texto: 'Creative Industries Market',imagenSrc: [mercadoPortada]},    
     { id: 6, url:"void",texto: 'The Density in the Void',imagenSrc: [densidadVacioPortada, ]},
+    { id: 7, url:"duplex",texto: 'Duplex',imagenSrc: [duplexPortada, ]},
   ];
 
   const handleMouseEnter = (imagenSrc) => {

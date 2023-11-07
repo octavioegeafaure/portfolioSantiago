@@ -15,6 +15,7 @@ export const ProjectsDetalle = () => {
   const totalImages = item ? item.imagenSrc.length : 0;
   const currentImageNumber = currentIndex + 1;
   const [touchStartX, setTouchStartX] = useState(null);
+  const imageInfo = item ? item.imagenSrc[currentIndex] : null;
 
   // Detect swipe gestures
   const handleTouchStart = (event) => {
@@ -70,13 +71,19 @@ export const ProjectsDetalle = () => {
     }
   };
   const updateImage = () => {
-    return <img       
-            onTouchStart={handleTouchStart}
-            onTouchEnd={handleTouchEnd} 
-            onClick={handleImageClick} 
-            className='proyecto-img' 
-            src={item.imagenSrc[currentIndex]} 
-            alt={item.texto} />;
+    if (imageInfo) {
+    const { src, className } = imageInfo;
+    return (
+      <img
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+        onClick={handleImageClick}
+        className={`proyecto-img ${className}`}
+        src={src}
+        alt={item.texto}
+      />
+    );
+  }
   };
 
 
