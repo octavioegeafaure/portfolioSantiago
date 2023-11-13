@@ -30,6 +30,7 @@ import housing12 from "../../public/Images/julio2021/p9.webp"
 import housing13 from "../../public/Images/julio2021/p10.webp"
 import housing14 from "../../public/Images/julio2021/p11.webp"
 import housing15 from "../../public/Images/julio2021/p13.webp"
+import densidadVacioPortada from "../../public/Images/densidadVacioPortada.webp"
 import densidad1 from "../../public/Images/julio2022/1.webp"
 import densidad2 from "../../public/Images/julio2022/2.webp"
 import densidad3 from "../../public/Images/julio2022/3.webp"
@@ -90,6 +91,7 @@ import building19 from "../../public/Images/noviembre2021/4DA9D21D-7DF6-4E48-BED
 import building20 from "../../public/Images/noviembre2021/IMG_1939.webp"
 import edificioPortada from "../../public/Images/edificioPortada.webp"
 import intercambiadorPortada from "../../public/Images/intercambiadorPortada.webp"
+import mercadoPortada from "../../public/Images/mercadoPortada.webp"
 import mercado from "../../public/Images/noviembre2022/50.webp"
 import mercado1 from "../../public/Images/noviembre2022/51.webp"
 import mercado2 from "../../public/Images/noviembre2022/52.webp"
@@ -152,7 +154,16 @@ import duplex29 from "../../public/Images/noviembre2020/3-100.webp"
 import duplex30 from "../../public/Images/noviembre2020/4-100.webp"
 
 export const items = [
-    { id: 1, url:"housing",titulo: 'Minimum Housing',project:"",location:"Downtown Area, Córdoba, (Ar)",year:"2021",status:"Project",sector:"Housing", 
+    { id: 1, 
+      url:"housing",
+      titulo: 'Minimum Housing',
+      project:"",
+      location:"Downtown Area, Córdoba, (Ar)",
+      year:"2021",
+      status:"Project",
+      sector:"Housing",
+      description: "This is a description of the Minimum Housing project.", 
+    
     imagenSrc: [
       {src:housingTerrazaVacio, className: "proyecto-img"},
       {src:housing1, className: "proyecto-img"},
@@ -169,7 +180,15 @@ export const items = [
       {src:housing14, className: "proyecto-img"},
       {src:housing15, className: "proyecto-img"},
     ]},
-    { id: 2, url:"library",titulo: 'UNC Postgraduate Library',project:"",location:" Córdoba National University",year:"2023",status:"Project",sector:"Institutional", 
+    { id: 2, 
+      url:"library",
+      titulo: 'UNC Postgraduate Library',
+      project:"",
+      location:" Córdoba National University",
+      year:"2023",
+      status:"Project",
+      sector:"Institutional", 
+      description: "This is a description of the Minimum Housing project.",
     imagenSrc: [
       {src:biblioteca, className: "proyecto-img"},
       {src:biblioteca1, className: "proyecto-img"},
@@ -188,7 +207,14 @@ export const items = [
       {src:biblioteca14, className: "proyecto-img"},
       {src:biblioteca15, className: "proyecto-img"},
     ]},
-    { id: 3, url:"building",titulo: 'Residential Building',project:"",location:"Downtown Area, Córdoba, (Ar)",year:"2021",status:"Project",sector:"Residential", 
+    { id: 3, url:"building",
+    titulo: 'Residential Building',
+    project:"",
+    location:"Downtown Area, Córdoba, (Ar)",
+    year:"2021",
+    status:"Project",
+    sector:"Residential", 
+    description: "This is a description of the Minimum Housing project.",
       imagenSrc: [
       {src:edificioPortada, className: "proyecto-img"},
       {src:building1, className: "proyecto-img"},
@@ -211,10 +237,18 @@ export const items = [
       {src:building19, className: "proyecto-img"},
       {src:building20, className: "proyecto-img"},
     ]},
-    { id: 4, url:"intermodal",titulo: 'UNC Intermodal Station',project:"",location:"Córdoba National University",year:"2023",status:"Project",sector:"Intermodal Station", 
+    { id: 4, 
+      url:"intermodal",
+      titulo: 'UNC Intermodal Station',
+      project:"",
+      location:"Córdoba National University",
+      year:"2023",
+      status:"Project",
+      sector:"Intermodal Station", 
+      description: "This is a description of the Minimum Housing project.",
     imagenSrc: [
-      // {src:intercambiadorPortada, className: "proyecto-img"},
-      {src:intercambiador1, className: "proyecto-img"},
+      {src:intercambiadorPortada, className: "proyecto-img"},
+      // {src:intercambiador1, className: "proyecto-img"},
       {src:intercambiador2, className: "proyecto-img"},
       {src:intercambiador3, className: "proyecto-img"},
       {src:intercambiador6, className: "proyecto-img"},
@@ -227,8 +261,17 @@ export const items = [
       {src:intercambiador12, className: "proyecto-img"},   
       {src:intercambiador13, className: "proyecto-img"},
     ]},
-    { id: 5, url:"creativemarket",titulo: 'Creative Industries Market',project:"Córdoba Creative Industries Market",location:"General Paz, Córdoba, (Ar)",year:"2022",status:"Project",sector:"Public Buildings", 
+    { id: 5, 
+      url:"creativemarket",
+      titulo: 'Creative Industries Market',
+      project:"Córdoba Creative Industries Market",
+      location:"General Paz, Córdoba, (Ar)",
+      year:"2022",
+      status:"Project",
+      sector:"Public Buildings", 
+      description: "This is a description of the Minimum Housing project.",
     imagenSrc: [
+      {src:mercadoPortada, className: "proyecto-img"},
       {src:mercado, className: "proyecto-img"},
       {src:mercado1, className: "proyecto-img"},
       {src:mercado2, className: "proyecto-img"},
@@ -262,8 +305,17 @@ export const items = [
       {src:mercado30, className: "proyecto-img"},
     ]
   },
-    { id: 6, url:"void",titulo: 'The Density in the Void',project:"",location:"No Context",year:"2022",status:"Project",sector:"Exploration", 
+    { id: 6, 
+      url:"void",
+      titulo: 'The Density in the Void',
+      project:"",
+      location:"No Context",
+      year:"2022",
+      status:"Project",
+      sector:"Exploration", 
+      description: "This is a description of the Minimum Housing project.",
     imagenSrc: [
+      {src:densidadVacioPortada, className: "proyecto-img"},
       {src:densidad1, className: "proyecto-img"},
       {src:densidad2, className: "proyecto-img"},
       {src:densidad3, className: "proyecto-img"},
@@ -290,7 +342,15 @@ export const items = [
       {src:densidad25, className: "proyecto-img"},
       {src:densidad26, className: "proyecto-img"},
     ]},
-    { id: 7, url:"duplex",titulo: 'Duplex',project:"",location:"Downtown Area, Córdoba, (Ar)",year:"2020",status:"Project",sector:"Housing", 
+    { id: 7, 
+      url:"duplex",
+      titulo: 'Duplex',
+      project:"",
+      location:"Downtown Area, Córdoba, (Ar)",
+      year:"2020",
+      status:"Project",
+      sector:"Housing", 
+      description: "This proposal is part of a project aimed at intervening in the Paseo el Caminante gallery, with the objective of creating habitable units that respond to contemporary living patterns while revitalizing the city center.                                                                                                 Eleven minimal dwellings are proposed above the existing commercial gallery. The basis of the modulation is the previous structure, and the common spaces of higher hierarchy are situated in areas close to the facade, considering their potential as places from which to view the city from above.                                                                                                               Our sector includes three urban furniture pieces that vary in size, and their flexible spaces allow for a wide range of activities according to the user's needs.                                        We opted for entirely dry construction to minimize the impact on the pre-existing structure, reduce costs, and facilitate on-site assembly. The volumes feature an independent steel pipe structure with corrugated sheet metal cladding. Additionally, a system of sliding sunshades is proposed, allowing for complete enclosure of the dwellings.                                                      The units have a communal space before their entrance and private double-height expansions of high importance. Furthermore, they share two terraces with semi-covered areas. The materiality of these intermediate spaces is resolved with electro-welded mesh, allowing for a direct visual connection with the immediate surroundings.",
     imagenSrc: [
       {src:duplex1, className: "proyecto-img"},
       {src:duplex2, className: "proyecto-img"},

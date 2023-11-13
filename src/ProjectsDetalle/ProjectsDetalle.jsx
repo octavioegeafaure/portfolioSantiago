@@ -1,5 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Link, useLocation } from "wouter";
+import React, { useState } from 'react';
+import { useLocation } from "wouter";
+import { AnimatePresence, motion } from 'framer-motion';
 import {items} from './dataProjects'
 import { Header } from '../Header/Header';
 import "./ProjectsDetalle.css"
@@ -16,6 +17,16 @@ export const ProjectsDetalle = () => {
   const currentImageNumber = currentIndex + 1;
   const [touchStartX, setTouchStartX] = useState(null);
   const imageInfo = item ? item.imagenSrc[currentIndex] : null;
+  const [showFullDescription, setShowFullDescription] = useState(false);
+  const [zIndex, setZIndex] = useState(1); // Initial z-index value
+  const [descriptionExpanded, setDescriptionExpanded] = useState(false);
+
+  const toggleDescriptionExpansion = () => {
+    setDescriptionExpanded((prevExpanded) => !prevExpanded);
+  };
+
+
+
 
   // Detect swipe gestures
   const handleTouchStart = (event) => {
@@ -94,7 +105,7 @@ export const ProjectsDetalle = () => {
         <div className="imagen-container-proyecto-medio">
           {item ? (
             <div className="imagen-container-proyecto-medio-container">
-              <div>
+              <div className="imagen-container-proyecto-medio-container-caracteristicas">
                 <p className='imagen-container-proyecto-medio-container-titulo'>{item.titulo}</p>
                 <div className="imagen-container-proyecto-medio-container-unidades">
                   <div className="imagen-container-proyecto-medio-container-unidades-p">
@@ -114,7 +125,7 @@ export const ProjectsDetalle = () => {
                 </div>
               {/* <p>back to projects</p>  */}
               </div>
-
+              
             </div>
             ):null}
         </div>
@@ -134,6 +145,15 @@ export const ProjectsDetalle = () => {
           ) : (
           <p>Item not found</p>
           )}
+        </div>
+      </div>
+      <div
+        
+        className={`imagen-container-proyecto-description ${descriptionExpanded ? 'expanded' : ''}`}
+        onClick={toggleDescriptionExpansion}
+      >
+        <div className="imagen-container-proyecto-description-container">
+          <p>{item.description}</p>
         </div>
       </div>
   </div>
