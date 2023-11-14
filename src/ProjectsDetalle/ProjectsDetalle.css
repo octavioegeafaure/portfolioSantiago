@@ -110,7 +110,7 @@
     }
 
     .imagen-container-proyecto-derecha-imagen-img {
-        display: block;
+        align-items: center;
     }
 
     .imagen-container-proyecto-medio-container {
@@ -118,18 +118,20 @@
         flex-direction: column;
         padding-bottom: 1rem;
     }
-
+    .imagen-container-proyecto-medio-container-unidades {
+        padding-right: 2rem;
+    }
     .proyecto-img {
-        /* width: 70vw; */
+        max-width: 70vw;
         max-height: 55vh;
     }
     .large-image {
         display: flex;
         justify-content: center;
         cursor: pointer;
-        /* width: 20%; */
+        max-width: 70vw;
         max-height: 55vh;
-        /* width: 100%; */
+        width: 100%;
     }
     .imagen-container-proyecto-derecha-imagen-img-botones {
         width: 70vw;
