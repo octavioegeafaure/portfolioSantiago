@@ -85,14 +85,21 @@ export const ProjectsDetalle = () => {
     if (imageInfo) {
     const { src, className } = imageInfo;
     return (
-      <img
+       <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 1.5,
+          }}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
         onClick={handleImageClick}
         className={`proyecto-img ${className}`}
         src={src}
         alt={item.texto}
-      />
+      /> 
+      
+
     );
   }
   };
@@ -133,7 +140,9 @@ export const ProjectsDetalle = () => {
           {/* logica para cuando este en la url y hago comparacion  */}
           {item ? (
           <div >
+
             <div className='imagen-container-proyecto-derecha-imagen-img'>
+              
               {updateImage()}    
                 <div className='imagen-container-proyecto-derecha-imagen-img-botones'>
                 {/* <button onClick={showPreviousImage}>{"<"}</button> */}
@@ -148,7 +157,6 @@ export const ProjectsDetalle = () => {
         </div>
       </div>
       <div
-        
         className={`imagen-container-proyecto-description ${descriptionExpanded ? 'expanded' : ''}`}
         onClick={toggleDescriptionExpansion}
       >

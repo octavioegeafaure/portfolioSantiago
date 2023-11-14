@@ -28,6 +28,7 @@
     cursor: pointer;
     /* width: 50%; */
     max-height: 90vh;
+    transition: 0.4s;
 }
 .large-image{
     display: flex;
@@ -78,6 +79,7 @@
     position: fixed;
     border-left: 2px solid black;
     background: white;
+    cursor: pointer;
     /* overflow: hidden; */
     left: 97.5%;
     transition: 1s;
@@ -171,7 +173,7 @@
         width: auto;
         max-width: 95vw;
         /* padding-right: 1rem; */
-        max-height: 40vh;
+        max-height: 35vh;
     }
     .large-image {
         display: flex;
@@ -179,7 +181,7 @@
         cursor: pointer;
         width: auto;
         max-width: 95vw;
-        max-height: 50vh;
+        max-height: 35vh;
         /* width: 100%; */
     }
     .imagen-container-proyecto-derecha-imagen-img-botones {
@@ -188,15 +190,40 @@
     .imagen-container-proyecto-medio-container-titulo{
         padding-bottom: 1rem;
     }
+    /* .imagen-container-proyecto-description {
+        position: fixed;
+        border-left: 2px solid black;
+        background: white;
+        overflow: hidden;
+        left: 97.5%;
+        transition: 1s;
+        height: 97vh;
+        width: 70vw;
+        z-index: 1000;
+    }
+    
+    .imagen-container-proyecto-description.expanded {
+        transition: 1s;
+        transform: translateX(-48vw);
+        width: 100%;
+        z-index: 1000;
+    }
+    
+    .imagen-container-proyecto-description-container {
+        padding-left: 1rem;
+        width: 48%;
+    } */
     .imagen-container-proyecto-description {
     position: fixed;
+    padding-bottom: 2rem;
     border-left: 2px solid black;
     background: white;
-    /* overflow: hidden; */
+    overflow: hidden;
     left: 97.5%;
     transition: 1s;
     height: 97vh;
     width: 100vw;
+
     z-index: 1000;
     }
 
@@ -208,7 +235,7 @@
     }
     .imagen-container-proyecto-description-container{
         padding-left: 1rem;
-        width: 93%;
+        width: 80%;
     }
     }
 
