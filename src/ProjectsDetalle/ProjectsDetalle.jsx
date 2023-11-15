@@ -24,10 +24,6 @@ export const ProjectsDetalle = () => {
   const toggleDescriptionExpansion = () => {
     setDescriptionExpanded((prevExpanded) => !prevExpanded);
   };
-
-
-
-
   // Detect swipe gestures
   const handleTouchStart = (event) => {
     setTouchStartX(event.touches[0].clientX);
@@ -103,7 +99,16 @@ export const ProjectsDetalle = () => {
     );
   }
   };
+  const detectBullets = (text) => {
+    // Assuming that bullet points are lines starting with '-'
+    const lines = text.split('\n');
+    const bulletRegex = /^\s*-/;
 
+    return lines.map((line, index) => {
+      const isBullet = bulletRegex.test(line);
+      return isBullet ? <li key={index}>{line.replace(bulletRegex, '').trim()}</li> : <p key={index}>{line}</p>;
+    });
+  };  
 
   return (
     <div className="imagen-container-proyecto">
@@ -156,15 +161,24 @@ export const ProjectsDetalle = () => {
           )}
         </div>
       </div>
-      <div
-        className={`imagen-container-proyecto-description ${descriptionExpanded ? 'expanded' : ''}`}
-        onClick={toggleDescriptionExpansion}
-      >
+      <div className={`imagen-container-proyecto-description ${descriptionExpanded ? 'expanded' : ''}`} onClick={toggleDescriptionExpansion}>
         <div className="imagen-container-proyecto-description-container">
-          <p>{item.description}</p>
+          {item && item.description ? (
+            item.description.useBullets ? (
+              <ul>
+                {detectBullets(item.description.content.join('\n'))}
+              </ul>
+            ) : (
+              <p>{item.description.content ? item.description.content.join('\n') : ''}</p>
+            )
+          ) : (
+            <p>Item description not available</p>
+          )}
         </div>
       </div>
-  </div>
+      </div>
+   
+ 
   );
 };
 
