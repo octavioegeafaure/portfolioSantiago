@@ -163,6 +163,7 @@ export const ProjectsDetalle = () => {
       </div>
       <div className={`imagen-container-proyecto-description ${descriptionExpanded ? 'expanded' : ''}`} onClick={toggleDescriptionExpansion}>
         <div className="imagen-container-proyecto-description-container">
+          <p className="imagen-container-proyecto-description-container-rotate">Description</p>
           {item && item.description ? (
             item.description.useBullets ? (
               <ul>
