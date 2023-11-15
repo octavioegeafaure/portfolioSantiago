@@ -104,7 +104,9 @@
     scrollbar-width: none;
     /* Firefox */
 }
-
+.imagen-container-proyecto-description-container p {
+    margin: 0;
+}
 .imagen-container-proyecto-description-container::-webkit-scrollbar {
     display: none;
     /* Safari and Chrome */
@@ -236,7 +238,6 @@
     transition: 1s;
     height: 97vh;
     width: 100vw;
-
     z-index: 1000;
     }
 

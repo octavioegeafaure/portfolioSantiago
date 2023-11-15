@@ -314,7 +314,6 @@ export const items = [
         "Pregúntale a Córdoba que sería sin un tren urbano.",
         "¿Pensaste alguna vez en coser sin un sentido?",
         "Imagínate, si ese fuera tu recorrido!"
- 
       ]
     },
     imagenSrc: [
