@@ -239,9 +239,10 @@
     position: fixed;
     padding-bottom: 2rem;
     border-left: 2px solid black;
+    margin-top: 1rem;
     background: white;
     overflow: hidden;
-    left: 96.5%;
+    left: 93.5%;
     transition: 1s;
     height: 97vh;
     width: 100vw;
@@ -256,7 +257,7 @@
     }
     .imagen-container-proyecto-description-container{
         padding-left: 0rem;
-        width: 80%;
+        width: 90%;
     }
     }
 
