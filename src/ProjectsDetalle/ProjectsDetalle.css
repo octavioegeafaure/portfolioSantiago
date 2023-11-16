@@ -97,8 +97,7 @@
 .imagen-container-proyecto-description-container{
     display: grid;
     grid-template-columns: 7% 80%;
-    /* display: flex; */
-    /* padding-left: 1rem; */
+    padding-top: 1rem;
     height: 100%;
     width: 48%;
     overflow-y: auto;
@@ -109,9 +108,9 @@
     margin-top: 4rem;
     rotate: 270deg;
     align-self: start;
-    /* height: 15vh; */
 }
 .imagen-container-proyecto-description-container p {
+    color: black;
     /* margin: 0; */
 }
 .imagen-container-proyecto-description-container::-webkit-scrollbar {
