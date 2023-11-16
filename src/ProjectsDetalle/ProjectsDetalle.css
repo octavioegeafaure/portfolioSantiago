@@ -251,7 +251,7 @@
 
     .imagen-container-proyecto-description.expanded {
         transition: 1s;
-        transform: translateX(-97vw);
+        transform: translateX(-93vw);
         width: 100%;
         z-index: 1000;
     }
