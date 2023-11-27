@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useLocation } from "wouter";
+import { useLocation } from 'react-router-dom';
+
 import { AnimatePresence, motion } from 'framer-motion';
 import {items} from './dataProjects'
 import { Header } from '../Header/Header';
@@ -9,8 +10,8 @@ import "./ProjectsDetalle.css"
 
 export const ProjectsDetalle = () => {
 
-  const [location, setLocation] = useLocation();
-  const segment = location.substring(location.lastIndexOf('/') + 1);
+  const location = useLocation();
+  const segment = location.pathname.substring(location.pathname.lastIndexOf('/') + 1);
   const item = items.find((item) => item.url === segment);
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalImages = item ? item.imagenSrc.length : 0;

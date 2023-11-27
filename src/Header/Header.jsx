@@ -1,7 +1,7 @@
 import "./Header.css"
 import { motion } from "framer-motion";
 import { useRef } from "react";
-import { Link } from "wouter";
+import { Link } from "react-router-dom";
 
 
 export const Header = () => {
@@ -28,18 +28,18 @@ export const Header = () => {
           </Link>
         </div>
           <div className="header-menu">
-            <Link href="/portfolioSantiago/projects/">
+            <Link to="/projects/">
               <motion.h4 className="header-menu-proyectos">
                 projects
               </motion.h4>              
             </Link>
-            <Link href="/portfolioSantiago/about/">
+            <Link to="/about/">
               <motion.h4
               className="header-menu-about">
                 about
               </motion.h4>              
             </Link>
-            <Link href="/portfolioSantiago/contact/">
+            <Link to={`/contact/`}>
               <motion.h4
               className="header-menu-about">
                 contact

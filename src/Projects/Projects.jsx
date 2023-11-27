@@ -8,7 +8,7 @@ import mercadoPortada from "../../public/Images/mercadoPortada.webp"
 import densidadVacioPortada from "../../public/Images/densidadVacioPortada.webp"
 import duplexPortada from "../../public/Images/duplexPortada.webp"
 import { Header } from '../Header/Header';
-import { Link } from 'wouter';
+import { Link } from "react-router-dom";
 
 export const Projects = () => {
   const [hoverImagen, setHoverImagen] = useState(null);
@@ -49,7 +49,7 @@ export const Projects = () => {
       <div className='imagen-container-derecha'>
         <div className="imagen-container-list">
         {items.map((item) => (
-          <Link key={item.id} href={`/portfolioSantiago/projects/${item.url}`}>
+          <Link key={item.id} to={`/projects/${item.url}`}>
           <div
             key={item.id}
             className="imagen-container-list-item"
