@@ -1,5 +1,5 @@
 import './App.css'
-import { Route, Switch } from "wouter";
+import { Route } from "react-router-dom";
 import { Home } from './Home'
 import { Footer } from './Footer/Footer';
 import {Projects} from './Projects/Projects';
@@ -11,11 +11,11 @@ function App() {
   return (
     <>
     <HashRouter>
-        <Route path="/portfolioSantiago"  ><Home /></Route>
-        <Route path="/portfolioSantiago/projects/"  ><Projects /></Route>
-        <Route path="/portfolioSantiago/projects/:id"  ><ProjectsDetalle /></Route>
-        <Route path="/portfolioSantiago/about/"  ><About /></Route>
-        <Route path="/portfolioSantiago/contact/"  ><Footer /></Route>
+        <Route path="/portfolioSantiago" element={<Home />}  />
+        <Route path="/portfolioSantiago/projects/" element={<Projects />} />
+        <Route path="/portfolioSantiago/projects/:id" element={<ProjectsDetalle />} />
+        <Route path="/portfolioSantiago/about/" element={<About />} />
+        <Route path="/portfolioSantiago/contact/" element={<Footer />} />
     </HashRouter>   
     </>
   )
