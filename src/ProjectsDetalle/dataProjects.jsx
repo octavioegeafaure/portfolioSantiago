@@ -165,7 +165,11 @@ export const items = [
       description: {
       useBullets: false,
       content: [
-        "no content"
+        "This proposal is part of a project aimed at intervening in the Paseo el Caminante gallery, with the objective of creating habitable units that respond to contemporary living patterns while revitalizing the city center. ",
+        "Eleven minimal dwellings are proposed above the existing commercial gallery. The basis of the modulation is the previous structure, and the common spaces of higher hierarchy are situated in areas close to the facade, considering their potential as places from which to view the city from above. ",
+        "Our sector includes three urban furniture pieces that vary in size, and their flexible spaces allow for a wide range of activities according to the user's needs.    ",
+        "We opted for entirely dry construction to minimize the impact on the pre-existing structure, reduce costs, and facilitate on-site assembly. The volumes feature an independent steel pipe structure with corrugated sheet metal cladding. Additionally, a system of sliding sunshades is proposed, allowing for complete enclosure of the dwellings. ",
+        "The units have a communal space before their entrance and private double-height expansions of high importance. Furthermore, they share two terraces with semi-covered areas. The materiality of these intermediate spaces is resolved with electro-welded mesh, allowing for a direct visual connection with the immediate surroundings.",
       ]
     },
     
