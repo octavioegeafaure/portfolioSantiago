@@ -23,7 +23,7 @@ export const Header = () => {
         className="header-motion"
       > 
         <div>
-          <Link href="/portfolioSantiago/">
+          <Link to="/">
             <h1 className="header-nombre">santiago espeche</h1>
           </Link>
         </div>
