@@ -204,6 +204,7 @@ export const items = [
         "On the upper floor, there is a storage and quick-reference area with sufficient capacity to house area-specific books, boasting 180 linear meters. Its language and atmosphere emphasize austerity and material weight, recognizing these phases as practically inflexible and unchanging over time, as bespoke equipment was designed for the storage area.  ",
         "On the ground floor, the layout of equipment begins with a mezzanine featuring exhibition stands and user interaction, viewed as the starting point towards a more social programmatic condition. Below this mezzanine, a flexible meeting room is located, featuring translucent enclosures that allow for an intermediate level of visual and physical interaction. Subsequently, there is a book and document storage wall for constant and high-frequency reference.",
         "Finally, directly connected to the terrace, the most flexible area for active and productive work is situated. In this section, there is also a 270° immersive chamber, facilitating interaction with virtual reality—a crucial element in our field as professionals in the present day.",
+        "       ",
       ]
     }, 
      
@@ -243,7 +244,8 @@ export const items = [
         "Lastly, at the pinnacle of the building, there is a multipurpose room (SUM) and semi-covered outdoor spaces.  ",
         "In terms of structure, both volumes feature independent reinforced concrete frameworks. The cultural center is predominantly glazed and benefits from the protection of the circulation cantilevers.   ",
         "Furthermore, the tower incorporates a metal substructure consisting of IPN profiles that rise above the SUM, from which the balcony system and apartment circulation are suspended.",
-        "This structure also allows for the realization of a facade-protecting envelope composed of fixed and movable metal sunshades with micro-perforated sheeting."
+        "This structure also allows for the realization of a facade-protecting envelope composed of fixed and movable metal sunshades with micro-perforated sheeting.",
+        "       ",
       ]
     }, 
       imagenSrc: [
@@ -292,8 +294,9 @@ export const items = [
       "  - Ground Floor: Administrative, sanitary, and waiting areas.",
       "  - Upper Floor: Commercial, administrative, sanitary, and waiting areas.",
       "One of the project's key principles is circulation and its continuous connections. A ribbon-like element traverses and envelops the building, forming a connecting thread between both stations.",
-      "Additionally, the structure plays a fundamental and innovative role in creating vast covered transition areas, allowing the city itself to become the interchange hub."
-      ]
+      "Additionally, the structure plays a fundamental and innovative role in creating vast covered transition areas, allowing the city itself to become the interchange hub.",
+      "       ",
+    ]
     },  
 
     imagenSrc: [
@@ -381,6 +384,7 @@ export const items = [
         "Despite the minimalist nature as an expressive force, atmospheric complexity is inevitable. This pursuit involves the deliberate and ongoing process of decision-making, dissociating the interior as the known and testing the unpredictable nature of the outside as the familiar. In this manner, it becomes possible to perceive an infinite space-time sequence as a moment of decision stemming from previously unknown experiences. The gaze operates where the knowable becomes elusive, all commencing with the invention of a landscape, a space, rhythms, planes of light, or shadows. Visual synthesis, which fills and empties with information during the journey, is fundamental to grasping the space from the outset.",
         "Material monotony explicitly reveals the influence of light upon different planes, thus enabling an understanding of light as a phase, boundary, transition, or inhibition.",
         "Encountering the inevitable reddish tone of the central element visually impacts abruptly and decisively, demonstrating its presence and the mystery of its origin, compelling you to seek an answer amid such inexplicable submission.",
+        "       ",
       ]
     },
     imagenSrc: [
@@ -418,8 +422,15 @@ export const items = [
       location:"Downtown Area, Córdoba, (Ar)",
       year:"2020",
       status:"Project",
-      sector:"Housing", 
-      description: "This proposal is part of a project aimed at intervening in the Paseo el Caminante gallery, with the objective of creating habitable units that respond to contemporary living patterns while revitalizing the city center.                                                                                                 Eleven minimal dwellings are proposed above the existing commercial gallery. The basis of the modulation is the previous structure, and the common spaces of higher hierarchy are situated in areas close to the facade, considering their potential as places from which to view the city from above.                                                                                                               Our sector includes three urban furniture pieces that vary in size, and their flexible spaces allow for a wide range of activities according to the user's needs.                                        We opted for entirely dry construction to minimize the impact on the pre-existing structure, reduce costs, and facilitate on-site assembly. The volumes feature an independent steel pipe structure with corrugated sheet metal cladding. Additionally, a system of sliding sunshades is proposed, allowing for complete enclosure of the dwellings.                                                      The units have a communal space before their entrance and private double-height expansions of high importance. Furthermore, they share two terraces with semi-covered areas. The materiality of these intermediate spaces is resolved with electro-welded mesh, allowing for a direct visual connection with the immediate surroundings.",
+      sector:"Housing",
+      description: {
+      useBullets: false,
+      content: [
+        
+        "       ",
+      ]
+    }, 
+      
     imagenSrc: [
       {src:duplex1, className: "proyecto-img"},
       {src:duplex2, className: "proyecto-img"},
